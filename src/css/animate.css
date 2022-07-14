@@ -1,0 +1,10 @@
+@keyframes rainbow {
+  0% { color: red;}
+  25% { color: yellow;}
+  50% { color: green;}
+  75% { color: blue; }
+  100% { color: purple;}}
+
+@keyframes rotate-y {
+  from { transform: rotateY(0deg);}
+  to { transform: rotateY(720deg);}}

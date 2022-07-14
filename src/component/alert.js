@@ -1,0 +1,10 @@
+// Vanilla javascript
+// var alert = (icon, title, text) => {
+//   Swal.fire({
+//     icon: icon,
+//     title: title,
+//     text: text,
+//   });
+// };
+
+// export default alert

@@ -1,0 +1,62 @@
+/* :root */
+:root {
+	--color-1: #aab0ff;
+	--color-2: #a0a0a0;
+	--color-3: #707070;
+	--color-4: rgb(250, 250, 250);}
+
+/* add more */
+* {margin : 0; padding: 0;}
+body { font-family: 'Courier New', Courier, monospace;}
+.container {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	padding: 20px 5px;
+	vertical-align: baseline;}
+
+.row{
+	box-sizing: border-box;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+	overflow: auto;}
+
+h1, h2, h3, h4, h5 {text-align: center; cursor: pointer; color: var(--color-3)}
+h5 {font-size: 1em; font-weight: 600; padding-bottom: 12px}
+h4 {font-size: 1.2em; font-weight: 650; padding-bottom: 13px}
+h3 {font-size: 1.4em; font-weight: 700; padding-bottom: 14px}
+h2 {font-size: 1.6em; font-weight: 800; padding-bottom: 15px}
+h1 {font-size: 1.8em; font-weight: 900; padding: 15px 0 7px 0}
+p { color: var(--color-3);}
+
+main a {
+    color: inherit;
+	cursor: pointer;
+	padding: 7px;
+    text-decoration: none;}
+main p {
+	padding-bottom: 10px;
+    line-height: 1.1rem;}
+
+table { width: 100%;}
+thead {	font-weight: 800;}
+table, th, td {
+	border: 1px solid var(--color-1);
+	border-radius: 10px;
+	color: var(--color-3);
+	padding: 5px;
+	line-height: 30px;
+	overflow-x: auto;
+	word-wrap: break-word;
+  }
+tr { font-size: 1em;}
+footer { text-align: center;}
+
+/* phone view */
+@media screen and (max-width: 1024px) {
+	table { width: 100%;}
+	table, th, td {
+		border-radius: 10px;
+		line-height: 25px;}
+}
