@@ -10,15 +10,37 @@ nav.navbar {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 3;
 }
 
-.left-open, .right-open {cursor: pointer;}
-.left-close, .right-close {text-align: right;}
+.left-open,
+.right-open,
+.center-open {
+  cursor: pointer;
+}
+.left-close,
+.right-close {
+  text-align: right;
+}
 
-.left-open::after {content: '<< Open'; font-weight: bolder;}
-.left-close::before {content: '<< Close';}
-.right-open::after {content: 'Open >>'; font-weight: bolder;}
-.right-close::before {content: 'Close >>';}
+.center-open::before {
+  content: 'Center';
+  font-weight: bolder;
+}
+.left-open::after {
+  content: '<< Open';
+  font-weight: bolder;
+}
+.left-close::before {
+  content: '<< Close';
+}
+.right-open::after {
+  content: 'Open >>';
+  font-weight: bolder;
+}
+.right-close::before {
+  content: 'Close >>';
+}
 
 /* cover */
 #cover {
@@ -73,8 +95,6 @@ section {
   font-size: bold;
 }
 
-
-
 /* table */
 thead th {
   background-color: #dddddd;
@@ -92,7 +112,8 @@ table {
 }
 
 /* aside */
-#left-aside, #right-aside {
+#left-aside,
+#right-aside {
   background-color: #ddd;
   box-shadow: 1px 0px 5px gray;
   position: fixed;
@@ -100,19 +121,23 @@ table {
   opacity: 0;
   top: 0;
   bottom: 0;
-  width: 200px;
   overflow-y: auto;
 }
 
-#left-aside {left: 0;}
-#right-aside {right: 0;}
+#left-aside {
+  left: 0;
+}
+#right-aside {
+  right: 0;
+}
 #left-aside div,
 #right-aside div {
   border: groove 2px var(--color-4);
   word-wrap: break-word;
   padding: 7px 10px;
   box-sizing: border-box;
-  display: block;}
+  display: block;
+}
 
 #left-aside div:hover,
 #right-aside div:hover {
@@ -142,7 +167,7 @@ footer:hover span {
   z-index: 3;
 
   position: fixed;
-  top: 5%;
+  top: 10%;
   bottom: 5%;
   left: 30%;
   right: 30%;
@@ -166,7 +191,7 @@ footer:hover span {
 
   position: fixed;
 
-  top: 3%;
+  top: 8%;
   right: 28%;
   z-index: 4;
 }
