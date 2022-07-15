@@ -1,19 +1,19 @@
 // Vanilla javascript
 $(document).ready(() => {
   $('.certificate').click(function () {
-    $('#certificate').slideToggle().siblings().slideUp();
+    $('#certificate').slideDown().siblings().slideUp();
   });
 
   $('.training').click(function () {
-    $('#training').slideToggle().siblings().slideUp();
+    $('#training').slideDown().siblings().slideUp();
   });
 
   $('.organization').click(function () {
-    $('#organization').slideToggle().siblings().slideUp();
+    $('#organization').slideDown().siblings().slideUp();
   });
 
   $('.work-experience').click(function () {
-    $('#work-experience').slideToggle().siblings().slideUp();
+    $('#work-experience').slideDown().siblings().slideUp();
   });
 
   // ----- table

@@ -1,17 +1,27 @@
 $(document).ready(() => {
-  $('.left-close').click(function () {
-    $('#left-side').css({
-      width: '0',
-      transition: '0.3s',
+  $('.left-open').click(function () {
+    $('#left-aside').css({
+      animation: 'left-unhide-motion 0.3s forwards',
     });
-    $(this).parent().siblings().slideToggle();
   });
 
-  $('.left-open').click(function () {
-    $('#left-side').css({
-      width: '200px',
-      transition: '0.3s',
+  // left-aside
+  $('.left-close').click(function () {
+    $('#left-aside').css({
+      animation: 'left-hide-motion 0.3s forwards',
     });
-    $(this).slideToggle();
+  });
+
+  $('.right-open').click(function () {
+    $('#right-aside').css({
+      animation: 'right-unhide-motion 0.3s forwards',
+    });
+  });
+
+  // right-aside
+  $('.right-close').click(function () {
+    $('#right-aside').css({
+      animation: 'right-hide-motion 0.3s forwards',
+    });
   });
 });
