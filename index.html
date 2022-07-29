@@ -9,75 +9,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- my css -->
-    <link rel="stylesheet" href="src/css/general.css" />
-    <link rel="stylesheet" href="src/css/main.css" />
-    <link rel="stylesheet" href="src/css/animate.css" />
+    <link rel="stylesheet" href="src/css/00_index.css" />
+    <link rel="stylesheet" href="src/css/01_header.css" />
+    <link rel="stylesheet" href="src/css/02_main.css" />
+    <link rel="stylesheet" href="src/css/03_footer.css" />
+    <link rel="stylesheet" href="src/css/_animate.css" />
 
     <title>Portofolio | Khairul Habibie</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a class="left-open"></a>
-      <a class="center-open"></a>
-      <a class="right-open"></a>
-    </nav>
     <header>
-      <!-- cover -->
-      <section id="cover" class="container">
-        <div class="row">
-          <img src="src/img/khairulhabibie.jpg" alt="Kharul Habibie" />
+      <nav id="navbar">
+        <div class="list">Content List</div>
+        <div id="list">
+          <p class="between">
+            <span class="view-all">View All</span>
+            <span class="close">X</span>
+          </p>
+          <p class="certificate">Certificate</p>
+          <p class="training">Training</p>
+          <p class="organization">Organization</p>
+          <p class="organization">Work-experience</p>
         </div>
-        <h1>Khairul Habibie S.Si</h1>
-        <h5><span>Front-end Engineer</span> | <span>jQuery</span> | <span>ReactJS</span></h5>
-      </section>
-      <!-- end cover -->
+        <div class="medsos">Menu</div>
+        <div id="medsos">
+          <div class="linkedin"><a href="https://www.linkedin.com/in/khairul-habibie/">Linkedin</a></div>
+          <div class="whatsapp">Whatsapp</div>
+          <div class="instagram">Instagram</div>
+          <div class="github"><a href="https://github.com/khairulhabibie">Github</a></div>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <section id="content" class="container">
-        <div id="certificate"></div>
-        <div id="training"></div>
-        <div id="organization"></div>
-        <div id="work-experience"></div>
+      <section id="cover"></section>
+      <section id="content">
+        <article id="table">
+          <div id="certificate"></div>
+          <div id="training"></div>
+          <div id="organization"></div>
+          <div id="work-experience"></div>
+        </article>
+        <aside id="course">
+          <a href="https://aws.amazon.com/"><img src="src/img/aws.png" /></a>
+          <a href="https://www.dicoding.com/"><img src="src/img/dicoding.png" /></a>
+          <a href="https://www.freecodecamp.org/khairulhabibie"><img src="src/img/fcc.png" /></a>
+          <a href="https://sanbercode.com/"><img src="src/img/sanbercode.png" /></a>
+        </aside>
       </section>
-      <aside>
-        <div id="left-aside">
-          <div class="certificate">Certificate</div>
-          <div class="training">Training</div>
-          <div class="organization">Organization</div>
-          <div class="work-experience">Work-experience</div>
-          <div class="left-close"></span>
-        </div>
-      </aside>
-      <aside>
-        <div id="right-aside">
-          <div class="certificate">Certificate</div>
-          <div class="training">Training</div>
-          <div class="organization">Organization</div>
-          <div class="work-experience">Work-experience</div>
-          <div class="right-close"></span>
-        </div>
-      </aside>
     </main>
 
-    <div class="box">
+    <div id="box">
       <div></div>
       <span class="close"></span>
     </div>
 
     <!-- footer -->
-    <footer class="container">
-      <p>Created by <span>khairul habibie</span></p>
-    </footer>
+    <footer></footer>
     <!-- end footer -->
 
     <!-- js lib -->
     <script src="src/lib/jquery.js"></script>
     <script src="src/lib/sweetalert2.all.min.js"></script>
     <!-- my js -->
-    <script src="src/component/alert.js"></script>
-    <script src="src/js/cover.js"></script>
-    <script src="src/js/content.js"></script>
-    <script src="src/js/aside.js"></script>
+    <script src="src/js/00_index.js"></script>
+    <script src="src/js/01_header.js"></script>
+    <script src="src/js/02_main.js"></script>
+    <script src="src/js/03_footer.js"></script>
   </body>
 </html>

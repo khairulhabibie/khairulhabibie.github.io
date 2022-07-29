@@ -1,22 +1,32 @@
 // Vanilla javascript
 $(document).ready(() => {
-  $('.certificate').click(function () {
-    $('#certificate').slideDown().siblings().slideUp();
-  });
+  // main - section#cover
+  $('#cover').html(`
+  <div class="row">
+  <img src="src/img/khairulhabibie.jpg" alt="Kharul Habibie" />
+  </div>
+  <h1>Khairul Habibie S.Si</h1>
+  <h5><span class="hover">Front-end Engineer</span> | <span class="hover">jQuery</span></h5>`);
 
-  $('.training').click(function () {
-    $('#training').slideDown().siblings().slideUp();
-  });
+  $('#cover span')
+    .first()
+    .click(() => {
+      icon = `question`;
+      title = `Who is Front-end Engineer`;
+      text = `someone who builds websites, designs apps, and ensures overall user accessibility`;
+      alert(icon, title, text);
+    });
 
-  $('.organization').click(function () {
-    $('#organization').slideDown().siblings().slideUp();
-  });
+  $('#cover span')
+    .last()
+    .click(() => {
+      icon = `question`;
+      title = `jQuery`;
+      text = ` a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax`;
+      alert(icon, title, text);
+    });
 
-  $('.work-experience').click(function () {
-    $('#work-experience').slideDown().siblings().slideUp();
-  });
-
-  // ----- table
+  // main-article#table
   $('#certificate').html(`
   <h2>Certificate</h2>
   <div class="row">
@@ -30,11 +40,11 @@ $(document).ready(() => {
       <tbody>
         <tr>
           <th>2022</th>
-          <td>Python Data Science - Machine Learning & Public Opinion Analysis (Sanbercode) <a id="c-1" class="btn">Readmore...!</a></td>
+          <td>Python Data Science - Machine Learning & Public Opinion Analysis (Sanbercode) <a id="c-1" class="button">Readmore...!</a></td>
         </tr>
         <tr>
           <th>2020</th>
-          <td>Bachelor's degree in physics (Padjadjaran University) <a id="c-2" class="btn">Readmore...!</a></td>
+          <td>Bachelor's degree in physics (Padjadjaran University) <a id="c-2" class="button">Readmore...!</a></td>
         </tr>
       </tbody>
     </table>
@@ -55,25 +65,25 @@ $(document).ready(() => {
         <!-- row 4 -->
         <tr>
           <th>2022</th>
-          <td>Font-End Web (Decoding) <a id="t-4" class="btn">Readmore...!</a></td>
+          <td>Font-End Web (Dicoding) <a id="t-4" class="button">Readmore...!</a></td>
         </tr>
         <!-- end row 4 -->
         <!-- row 3 -->
         <tr>
           <th>2022</th>
-          <td>AWS re/start Program (Orbit Future Academy) <a id="t-3" class="btn">Readmore...!</a></td>
+          <td>AWS re/start Program (Orbit Future Academy) <a id="t-3" class="button">Readmore...!</a></td>
         </tr>
         <!-- end row 3 -->
         <!-- row 2 -->
         <tr>
           <th>2022</th>
-          <td>Responsive Web Design (Freecodecamp) <a id="t-2" class="btn">Readmore...!</a></td>
+          <td>Responsive Web Design (Freecodecamp) <a id="t-2" class="button">Readmore...!</a></td>
         </tr>
         <!-- end row 2 -->
         <!-- row 1 -->
         <tr>
           <th>2022</th>
-          <td>Data Science - Machine Learning & Public Opinion Analysis (sanbercode) <a id="t-1" class="btn">Readmore...!</a></td>
+          <td>Data Science - Machine Learning & Public Opinion Analysis (sanbercode) <a id="t-1" class="button">Readmore...!</a></td>
         </tr>
         <!-- end row 1 -->
       </tbody>
@@ -98,7 +108,7 @@ $(document).ready(() => {
           <td>Badan Eksekutif Mahasiswa Keluarga Mahasiswa Faculty of Math and Science, Padjadjaran University</td>
         </tr>
         <tr>
-          <td>Staff of Academic and Reasoning Department <a id="o-3" class="btn">Readmore...!</a></td>
+          <td>Staff of Academic and Reasoning Department <a id="o-3" class="button">Readmore...!</a></td>
         </tr>
         <!-- end row 3 -->
         <!-- row 2 -->
@@ -107,7 +117,7 @@ $(document).ready(() => {
           <td>Shine (Wisdom, Insight Knowledge)</td>
         </tr>
         <tr>
-          <td>Physics Mentor <a id="o-2" class="btn">Readmore...!</a></td>
+          <td>Physics Mentor <a id="o-2" class="button">Readmore...!</a></td>
         </tr>
         <!-- end row 2 -->
         <!-- row 1 -->
@@ -116,7 +126,7 @@ $(document).ready(() => {
           <td>Rohis Nurul Ilmi Faculty of Math and Science, Padjadjaran University</td>
         </tr>
         <tr>
-          <td>Staff of Mentoring Center <a id="o-1" class="btn">Readmore...!</a></td>
+          <td>Staff of Mentoring Center <a id="o-1" class="button">Readmore...!</a></td>
         </tr>
         <!-- end row 1 -->
       </tbody>
@@ -138,13 +148,13 @@ $(document).ready(() => {
         <!-- row 2 -->
         <tr>
           <th>2019</th>
-          <td>Laboratory Assistant of Advance Physics and Science in Padjadjaran University <a id="w-2" class="btn">Readmore...!</a></td>
+          <td>Laboratory Assistant of Advance Physics and Science in Padjadjaran University <a id="w-2" class="button">Readmore...!</a></td>
         </tr>
         <!-- end row 2 -->
         <!-- row 3 -->
         <tr>
           <th>2018</th>
-          <td>Privat tutor in Insan Muda Briliant <a id="w-1" class="btn">Readmore...!</a></td>
+          <td>Privat tutor in Insan Muda Briliant <a id="w-1" class="button">Readmore...!</a></td>
         </tr>
         <!-- end row 3 -->
       </tbody>
@@ -164,21 +174,14 @@ $(document).ready(() => {
     target: `_blank`,
   });
 
-  $('footer').click(() => {
-    icon = `success`;
-    title = `Hello`;
-    text = `I'm Habibie`;
-    alert(icon, title, text);
-  });
-
   // --- position fixed
   var content = (text) => {
-    $(`.box`).slideDown();
-    $(`.box div`).html(text);
+    $(`#box`).slideDown();
+    $(`#box div`).html(text);
   };
 
   $(`.close`).click(function () {
-    $(this).parent(`.box`).slideUp();
+    $(this).parent(`#box`).slideUp();
   });
 
   $(`#t-4`).click(() => {
@@ -193,7 +196,6 @@ $(document).ready(() => {
   $('#t-3').click(() => {
     text = `<h5>AWS re/Start Program Learner (title), Amazon Web Services (AWS) as educational institution</h5><br/>
     <p>a. Completed 12 week, full-time, classroom based skills development and training program on IT fundamentals, AWS Cloud, and professional skills.<p/><br/>
-
     <p>b. Built IT fundamental skills, including: working knowledge of Linux OS, writing scripts in Python and Shell.<p/><br/>
 
     <p>c. Learned how to apply core AWS services in the area of compute, storage and networking, including EC2, S3, IAM, VPC, Lamda, Cloud Formation, RDS and Route 53.</p><br/>

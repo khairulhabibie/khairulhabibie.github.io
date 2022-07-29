@@ -1,0 +1,92 @@
+/* header - nav */
+nav {
+  box-shadow: 0px 1px 3px var(--color-2);
+  background-color: var(--color-1);
+  font-weight: 800;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  line-height: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+/* header - nav - list */
+header .list {
+  background-color: var(--color-2);
+  color: var(--color-1);
+  padding-inline: 5px;
+  margin-left: 10px;
+}
+header .list:hover {
+  text-decoration: underline;
+}
+
+/* header - nav - #list */
+header #list {
+  background-color: var(--color-1);
+  box-shadow: 1px 0px 5px var(--color-2);
+  position: fixed;
+  margin-top: 33px;
+
+  width: 200px;
+  opacity: 0;
+  left: -500px;
+  top: 0;
+
+  bottom: 0;
+  overflow-y: auto;
+}
+
+header #list .close {
+  animation: rotate-z-360 10s infinite linear;
+  border-radius: 50%;
+}
+
+header #list .view-all:hover {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+header #list p {
+  border: solid 1px var(--color-1);
+  padding-left: 10px;
+  background-color: var(--color-2);
+  color: var(--color-1);
+}
+
+header #list p:hover {
+  text-decoration: underline;
+}
+
+header #list p span {
+  background-color: var(--color-1);
+  color: var(--color-2);
+  border: solid var(--color-2) 1px;
+  cursor: pointer;
+  padding-inline: 10px;
+}
+
+/* header - nav - medsos */
+nav .medsos{
+  display: none;
+}
+
+nav #medsos {
+  box-sizing: border-box;
+}
+nav #medsos div {
+  display: inline;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  margin-right: 10px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+var #medsos div:hover {
+  text-decoration: underline;
+}

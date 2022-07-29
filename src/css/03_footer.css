@@ -1,0 +1,15 @@
+footer {
+  background-color: var(--color-1);
+  color: var(--color-2);
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+footer span {
+  padding: 5px;
+  border-radius: 10px;
+}
