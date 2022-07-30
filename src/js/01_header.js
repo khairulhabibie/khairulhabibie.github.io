@@ -1,28 +1,14 @@
 // JQUERY
 $(document).ready(() => {
-  const left_show = () => {
-    if ($('#media').css('opacity', '1')) {
-      $('#media').css({ opacity: '0' });
-    }
-    return 'left-show 0.3s forwards';
-  };
-  const right_show = (condition) => {
-    if (condition == true) {
-      return 'right-show 0.3s forwards';
-    } else {
-      return right_close();
-    }
+  const right_show = () => {
+    return 'right-show 0.3s forwards';
   };
   const right_close = () => {
     return 'right-hide 0.3s forwards';
   };
 
   $('.list').click(() => {
-    if ($('#list').css('opacity', '0')) {
-      $('#list').css({ animation: right_show(true) });
-    } else {
-      $('#list').css({ animation: right_show(false) });
-    }
+    $('#list').css({ animation: right_show() });
   });
   $('#list .close').click(() => {
     $('#list').css({ animation: right_close() });
