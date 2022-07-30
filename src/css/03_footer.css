@@ -1,5 +1,9 @@
 footer {
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
   background-color: var(--color-1);
   color: var(--color-2);
   cursor: pointer;
@@ -15,4 +19,5 @@ footer {
 footer span {
   padding: 5px;
   border-radius: 10px;
+  font-weight: 800;
 }
