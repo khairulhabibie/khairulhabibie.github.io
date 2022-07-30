@@ -108,9 +108,9 @@ a {
 /* pop up block in => readmore... */
 #box {
   background-color: var(--color-1);
-  border: solid 3px var(--color-2);
+  border: solid 1px var(--color-2);
   color: var(--color-2);
-  box-shadow: 0px 3px 8px var(--color-2);
+  box-shadow: 0px 0.001px 5px var(--color-2);
   border-radius: 5px;
   padding: 25px 10px 10px 10px;
 
@@ -135,12 +135,12 @@ a {
 }
 #box .close {
   background-color: var(--color-1);
-  border: solid 3px var(--color-2);
+  border: solid 1px var(--color-2);
   border-radius: 40%;
   color: var(--color-2);
   cursor: pointer;
-  font-weight: bolder;
-  font-size: 1.5em;
+  font-weight: 800;
+  font-size: 1.2em;
   padding: 5px;
 
   position: fixed;
@@ -148,6 +148,11 @@ a {
   top: 8%;
   right: 28%;
   z-index: 4;
+}
+
+#box .close:hover {
+  color: aliceblue;
+  animation: rotate-z-360 3s infinite forwards;
 }
 
 /* responsive view */

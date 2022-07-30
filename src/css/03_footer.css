@@ -8,6 +8,8 @@ footer {
   margin-top: 40px;
   text-align: center;
   width: 100%;
+  z-index: 3;
+  box-shadow: 0 -0.001px 5px var(--color-2);
 }
 
 footer span {
