@@ -77,11 +77,12 @@ header #list p span {
   padding-inline: 10px;
 }
 
-/* header - nav - medsos */
+/* header - nav - .medsos */
 nav .medsos {
   display: none;
 }
 
+/* header - nav - #medsos */
 nav #medsos {
   box-sizing: border-box;
 }

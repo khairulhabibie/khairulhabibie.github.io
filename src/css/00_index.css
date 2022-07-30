@@ -239,11 +239,41 @@ a {
 }
 
 @media screen and (max-width: 550px) {
-  nav .medsos {
+  /* header - nav - .medsos */
+  header nav .medsos {
     display: block;
+    margin-inline: 10px;
+    padding-inline: 5px;
+    background-color: var(--color-2);
+    color: var(--color-1);
   }
-  nav #medsos {
-    display: none;
+
+  /* header - nav - #medsos */
+  header nav #medsos {
+    opacity: 0;
+    left: -200px;
+    top: 30px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+
+  header nav #medsos div {
+    margin-bottom: 1px;
+
+    display: inline;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    margin-left: 10px;
+    padding-inline: 5px;
+    border-radius: unset;
+  }
+
+  header nav #medsos div:hover {
+    color: aliceblue;
+    cursor: pointer;
   }
 }
 

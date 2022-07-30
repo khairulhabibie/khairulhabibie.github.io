@@ -14,6 +14,20 @@ $(document).ready(() => {
     $('#list').css({ animation: right_close() });
   });
 
+  const left_show = () => {
+    return 'left-show 0.3s forwards';
+  };
+  const left_close = () => {
+    return 'left-hide 0.3s forwards';
+  };
+
+  $('.medsos').mouseover(() => {
+    $('#medsos').css({ animation: left_show() });
+  });
+  $('.medsos').mouseleave(() => {
+    $('#medsos').css({ animation: left_close() });
+  });
+
   // header - section
   $('.certificate').click(() => {
     $('#certificate').slideDown().siblings().slideUp();
