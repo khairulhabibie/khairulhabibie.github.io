@@ -3,6 +3,7 @@ main {
   margin-top: 70px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 main .row {
   display: flex;
@@ -21,7 +22,7 @@ main p {
   line-height: 1.1rem;
 }
 
-/* main - section #cover */
+/* main - section#cover */
 #cover {
   margin-bottom: 20px;
 }
@@ -40,20 +41,17 @@ main p {
   border-radius: 10px;
 }
 
-/* main - section #content */
-article {
+/* main - section#content */
+main section#content {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-/* main - section - article */
-article {
-  /* margin: 0 auto; */
-  display: flex;
-  justify-content: space-between;
-}
-
-/* main - article #table */
-#table {
+/* main - section#content - article#table */
+article#table {
+  order: 2;
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
@@ -62,43 +60,68 @@ article {
 }
 #table h2 {
   color: var(--color-2);
-  text-shadow: 0px 1px 1px var(--color-1);
 }
 #table h2::first-letter {
   font-size: 40px;
   font-size: bold;
 }
 
-/* main - article #table - #... */
 #certificate,
 #organization,
 #work-experience {
   display: none;
 }
 
-/* main - aside */
-aside {
-  background: linear-gradient(rgb(255, 255, 255) 0%, var(--color-1), rgb(255, 255, 255) 100%);
-  box-sizing: border-box;
-  margin: 40px auto;
-  min-width: 250px;
+/* main - section#content - aside#course */
+main section#content aside#course {
+  position: fixed;
 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  order: 1;
+  max-width: 200px;
+  padding: 5px 10px;
+
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-top: 30px;
+  border: solid 1px var(--color-2);
+  width: 100%;
+  text-align: center;
+  overflow-y: scroll;
 }
 
-/* main - aside */
-aside img {
-  border: inset var(--color-1) 7px;
+/* main - section#content - aside#course - .course */
+main section#content aside .course {
+  border: solid 1px var(--color-2);
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+main section#content aside h2,
+main section#content aside .course h3 {
+  color: var(--color-2);
+}
+main section#content aside .course p {
+  display: inline-block;
+  padding: 2px;
+  margin: 2px;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  border-radius: 3px;
+}
+
+main section#content aside .course img {
+  border: outset var(--color-1) 7px;
   box-shadow: 0 0 5px 1px #f5f5f5;
-  border-radius: 50%;
+  border-radius: 25%;
   cursor: pointer;
   height: 110px;
-  margin: 7px 0;
+  width: 110px;
+  margin: -10px 0 7px 0;
 }
 
-aside img:hover {
-  animation: rotate-y-720 3s;
+main section#content aside .course:hover img {
+  animation: rotate-y-720 3s infinite forwards;
 }

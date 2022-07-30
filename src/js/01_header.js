@@ -6,22 +6,26 @@ $(document).ready(() => {
     }
     return 'left-show 0.3s forwards';
   };
-  const right_show = () => {
-    if ($('#list').css('opacity', '1')) {
-      $('#list').css({ opacity: '0' });
+  const right_show = (condition) => {
+    if (condition == true) {
+      return 'right-show 0.3s forwards';
+    } else {
+      return right_close();
     }
-    return 'right-show 0.3s forwards';
+  };
+  const right_close = () => {
+    return 'right-hide 0.3s forwards';
   };
 
   $('.list').click(() => {
     if ($('#list').css('opacity', '0')) {
-      $('#list').css({ animation: left_show() });
+      $('#list').css({ animation: right_show(true) });
+    } else {
+      $('#list').css({ animation: right_show(false) });
     }
   });
   $('#list .close').click(() => {
-    $('#list').css({
-      animation: 'left-hide 0.3s forwards',
-    });
+    $('#list').css({ animation: right_close() });
   });
 
   // header - section
