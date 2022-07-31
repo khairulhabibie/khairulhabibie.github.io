@@ -21,7 +21,7 @@ footer span {
   font-weight: 800;
 }
 
-footer .scroll-top {
+/* footer .scroll-top {
   position: fixed;
   z-index: 10;
   right: 0;
@@ -31,4 +31,4 @@ footer .scroll-top {
   width: 40px;
   background-color: var(--color-2);
   color: aliceblue;
-}
+} */
