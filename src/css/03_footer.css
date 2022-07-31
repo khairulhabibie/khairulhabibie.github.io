@@ -4,13 +4,12 @@ footer {
   left: 0;
   right: 0;
 
+  text-align: center;
   background-color: var(--color-1);
   color: var(--color-2);
-  cursor: pointer;
   height: 40px;
   line-height: 40px;
   margin-top: 40px;
-  text-align: center;
   width: 100%;
   z-index: 3;
   box-shadow: 0 -0.001px 5px var(--color-2);
@@ -20,4 +19,16 @@ footer span {
   padding: 5px;
   border-radius: 10px;
   font-weight: 800;
+}
+
+footer .scroll-top {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+
+  height: 40px;
+  width: 40px;
+  background-color: var(--color-2);
+  color: aliceblue;
 }

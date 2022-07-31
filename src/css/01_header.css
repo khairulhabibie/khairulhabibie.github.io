@@ -16,87 +16,90 @@ nav {
 }
 
 /* header - nav - list */
-header .list {
+nav .list {
   background-color: var(--color-2);
   color: var(--color-1);
   padding-inline: 5px;
-  margin-right: 10px;
 }
 
-header .list:hover {
-  border-radius: 10px;
+nav .list:hover {
   color: aliceblue;
 }
 
 /* header - nav - #list */
-header #list {
-  background-color: var(--color-1);
-  box-shadow: 1px 0px 5px var(--color-2);
+nav #list {
   position: fixed;
-  margin-top: 33px;
-
-  width: 200px;
-  right: -200px;
-  opacity: 0;
   top: 0;
   bottom: 0;
+  opacity: 0;
+  right: -1000px;
   overflow-y: auto;
+
+  width: 200px;
+  background-color: var(--color-1);
+  margin-top: 30px;
 }
 
-header #list .close {
-  animation: rotate-z-360 10s infinite linear;
-  border-radius: 50%;
-}
-header #list .close:hover {
-  color: aliceblue;
-  border-radius: 25%;
-}
-header #list .view-all:hover {
-  border-radius: 10px;
-  transition: 0.3s;
-  color: aliceblue;
-}
-
-header #list p {
+nav #list p {
   border: solid 1px var(--color-1);
-  padding-left: 10px;
+  padding-inline: 10px;
   background-color: var(--color-2);
   color: var(--color-1);
   cursor: pointer;
 }
 
-header #list p:hover {
+nav #list p:hover {
   color: aliceblue;
 }
 
-header #list p span {
+/* header - nav - .burger-menu */
+nav .burger-menu {
+  padding-inline: 5px;
+  background-color: var(--color-2);
+  color: var(--color-1);
+}
+
+nav .burger-menu:hover {
+  color: aliceblue;
+}
+/* header - nav - #burger-menu */
+#burger-menu {
+  left: -1000px;
+  top: 30px;
+  opacity: 0;
+
+  width: 100%;
+  max-width: 160px;
+  overflow-y: auto;
+
+  box-sizing: border-box;
+  position: absolute;
+  padding: 0;
+}
+#burger-menu div {
+  padding-inline: 5px;
+  color: var(--color-2);
+  background-color: var(--color-1);
+}
+
+#burger-menu div:hover {
   background-color: var(--color-1);
   color: var(--color-2);
-  border: solid var(--color-2) 1px;
-  cursor: pointer;
-  padding-inline: 10px;
 }
 
-/* header - nav - .medsos */
-nav .medsos {
-  display: none;
+#burger-menu span {
+  display: flex;
+  flex-direction: column;
 }
 
-/* header - nav - #medsos */
-nav #medsos {
-  box-sizing: border-box;
-}
-
-nav #medsos div {
-  display: inline;
+#burger-menu span a {
   background-color: var(--color-2);
   color: var(--color-1);
-  margin-left: 10px;
-  padding: 3px;
-  border-radius: 10px;
+  margin: 1px 10px;
+  padding-inline: 3px;
 }
 
-nav #medsos div:hover {
-  color: aliceblue;
-  cursor: pointer;
+#burger-menu span a:hover {
+  background-color: var(--color-1);
+  color: var(--color-2);
 }

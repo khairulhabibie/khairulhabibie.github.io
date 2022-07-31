@@ -9,6 +9,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: aliceblue;
@@ -157,6 +160,7 @@ a {
 }
 
 /* responsive view */
+
 @media screen and (max-width: 1234px) {
   /* main - section#content - aside#course */
   main section#content aside#course h2 {
@@ -165,25 +169,25 @@ a {
   main section#content aside#course {
     position: unset;
 
+    overflow-y: unset;
+    max-width: unset;
     top: unset;
     left: 0;
     right: 0;
     bottom: 0;
-    max-width: unset;
-    overflow-y: unset;
 
     order: 2;
     display: flex;
     justify-content: center;
     overflow-x: scroll;
 
+    border: unset;
+    border-right: unset;
     padding: 5px 10px;
     box-sizing: border-box;
     word-wrap: break-word;
-    border-right: unset;
     box-shadow: 0.001px 0 5px var(--color-2);
     margin-top: 30px;
-    border: unset;
     text-align: center;
   }
 
@@ -236,45 +240,6 @@ a {
   }
   #box .close {
     right: 13%;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  /* header - nav - .medsos */
-  header nav .medsos {
-    display: block;
-    margin-inline: 10px;
-    padding-inline: 5px;
-    background-color: var(--color-2);
-    color: var(--color-1);
-  }
-
-  /* header - nav - #medsos */
-  header nav #medsos {
-    opacity: 0;
-    left: -200px;
-    top: 30px;
-
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-  }
-
-  header nav #medsos div {
-    margin-bottom: 1px;
-
-    display: inline;
-    background-color: var(--color-2);
-    color: var(--color-1);
-    margin-left: 10px;
-    padding-inline: 5px;
-    border-radius: unset;
-  }
-
-  header nav #medsos div:hover {
-    color: aliceblue;
-    cursor: pointer;
   }
 }
 

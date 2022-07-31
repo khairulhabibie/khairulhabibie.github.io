@@ -1,6 +1,4 @@
-$(document).ready(function () {
-  $('footer').html(`<p>Created by <span>khairul habibie</span></p>`);
-
+$(document).ready(() => {
   $('footer span')
     .addClass('hover')
     .click(() => {

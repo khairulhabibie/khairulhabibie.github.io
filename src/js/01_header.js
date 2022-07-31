@@ -1,31 +1,34 @@
 // JQUERY
 $(document).ready(() => {
   const right_show = () => {
-    return 'right-show 0.3s forwards';
+    return 'right-show 0.1s forwards';
   };
   const right_close = () => {
-    return 'right-hide 0.3s forwards';
+    return 'right-hide 1s forwards';
   };
 
-  $('.list').click(() => {
+  const left_show = () => {
+    return 'left-show 0.1s forwards';
+  };
+  const left_close = () => {
+    return 'left-hide 1s forwards';
+  };
+
+  $('.list').mouseover(() => {
     $('#list').css({ animation: right_show() });
   });
-  $('#list .close').click(() => {
+  $('.list').mouseleave(() => {
     $('#list').css({ animation: right_close() });
   });
 
-  const left_show = () => {
-    return 'left-show 0.3s forwards';
-  };
-  const left_close = () => {
-    return 'left-hide 0.3s forwards';
-  };
-
-  $('.medsos').mouseover(() => {
-    $('#medsos').css({ animation: left_show() });
+  $('.burger-menu').mouseover(() => {
+    $('#burger-menu').css({ animation: left_show() });
+    if ($('#list').css({ opacity: '1', right: '0px' })) {
+      $('#list').css({ opacity: '0', right: '-200px' });
+    }
   });
-  $('.medsos').mouseleave(() => {
-    $('#medsos').css({ animation: left_close() });
+  $('.burger-menu').mouseleave(() => {
+    $('#burger-menu').css({ animation: left_close() });
   });
 
   // header - section
@@ -49,19 +52,7 @@ $(document).ready(() => {
   $('.view-all').click(() => {
     $('#table').children().slideDown();
   });
-
-  // ... - alert
-  $('.whatsapp').click(() => {
-    icon = `warning`;
-    title = `Whatsapp`;
-    text = `Link Not Found !`;
-    alert(icon, title, text);
-  });
-
-  $('.instagram').click(() => {
-    icon = `warning`;
-    title = `Instagram`;
-    text = `Link Not Found !`;
-    alert(icon, title, text);
+  $('.hide-all').click(() => {
+    $('#table').children().slideUp();
   });
 });
