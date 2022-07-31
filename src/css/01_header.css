@@ -32,20 +32,27 @@ nav #list {
   top: 0;
   bottom: 0;
   opacity: 0;
-  right: -1000px;
+  right: -200px;
   overflow-y: auto;
+  padding: 0 5px 15px 5px;
 
-  width: 200px;
-  background-color: var(--color-1);
+  width: 190px;
+  /* background-color: unset; */
+  height: max-content;
   margin-top: 30px;
 }
 
+nav #list span p {
+  border: dashed 1px var(--color-1);
+}
+
 nav #list p {
-  border: solid 1px var(--color-1);
+  border-bottom: dashed 1px var(--color-1);
   padding-inline: 10px;
   background-color: var(--color-2);
   color: var(--color-1);
   cursor: pointer;
+  text-align: right;
 }
 
 nav #list p:hover {
@@ -64,7 +71,7 @@ nav .burger-menu:hover {
 }
 /* header - nav - #burger-menu */
 #burger-menu {
-  left: -1000px;
+  left: -200px;
   top: 30px;
   opacity: 0;
 

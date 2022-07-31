@@ -91,7 +91,8 @@ section#content aside#course {
 
 /* main - section#content - aside#course - .course */
 section#content aside .course {
-  border: solid 1px var(--color-2);
+  border: dashed 1px var(--color-2);
+  border-radius: 20px;
   padding: 5px;
   margin-bottom: 2px;
 }
