@@ -26,7 +26,7 @@ $(document).ready(() => {
       alert(icon, title, text);
     });
 
-  // main-article#table
+  // main - article#table - #certificate
   $('#certificate').html(`
   <h2>Certificate</h2>
   <div class="row">
@@ -40,17 +40,22 @@ $(document).ready(() => {
       <tbody>
         <tr>
           <th>2022</th>
-          <td>Python Data Science - Machine Learning & Public Opinion Analysis (Sanbercode) <a id="c-1" class="button">Readmore...!</a></td>
+          <td>Basics Web Development (Dicoding) <a id="c-3" class="button">Readmore...!</a></td>
+        </tr>
+        <tr>
+          <th>2022</th>
+          <td>Python Data Science - Machine Learning & Public Opinion Analysis (Sanbercode) <a id="c-2" class="button">Readmore...!</a></td>
         </tr>
         <tr>
           <th>2020</th>
-          <td>Bachelor's degree in physics (Padjadjaran University) <a id="c-2" class="button">Readmore...!</a></td>
+          <td>Bachelor's degree in physics (Padjadjaran University) <a id="c-1" class="button">Readmore...!</a></td>
         </tr>
       </tbody>
     </table>
   </div>
   `);
 
+  // main - article#table - #training
   $('#training').html(`
   <h2>Training</h2>
   <div class="row">
@@ -91,6 +96,7 @@ $(document).ready(() => {
   </div>
   `);
 
+  // main - article#table - #organization
   $('#organization').html(`
   <h2>Organization</h2>
   <div class="row">
@@ -134,6 +140,7 @@ $(document).ready(() => {
   </div>
   `);
 
+  // main - article#table - #work-experience
   $('#work-experience').html(`
   <h2>Work Experience</h2>
   <div class="row">
@@ -164,12 +171,17 @@ $(document).ready(() => {
 
   // ----- btn in table
   // -- alert
-  $('#c-1').attr({
-    href: `https://sanbercode.com/sertifikat/generate/26a91fb6-863f-4195-b4ef-fef5043c297b`,
+  $('#c-3').attr({
+    href: `https://www.dicoding.com/certificates/RVZK6MEVMZD5`,
     target: `_blank`,
   });
 
   $('#c-2').attr({
+    href: `https://sanbercode.com/sertifikat/generate/26a91fb6-863f-4195-b4ef-fef5043c297b`,
+    target: `_blank`,
+  });
+
+  $('#c-1').attr({
     href: `https://drive.google.com/file/d/1fn9qewsqy0E7CgmVpUAXtHWroZdpmm_F/view?usp=sharing`,
     target: `_blank`,
   });
