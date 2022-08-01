@@ -24,6 +24,10 @@ footer span {
   cursor: pointer;
 }
 
+footer span:hover {
+  color: aliceblue;
+}
+
 footer .scroll-top {
   position: fixed;
   z-index: 10;
