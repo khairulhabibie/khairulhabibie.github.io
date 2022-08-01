@@ -12,14 +12,14 @@
 html {
   scroll-behavior: smooth;
 }
+body::before {
+  background-color: var(--color-1);
+}
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: aliceblue;
 }
 
-body::before {
-  background-color: var(--color-1);
-}
 h1,
 h2,
 h3,
@@ -66,11 +66,11 @@ thead {
 table,
 th,
 td {
+  line-height: 30px;
   border: 1px solid var(--color-1);
   border-radius: 10px;
   color: var(--color-2);
   padding: 5px;
-  line-height: 30px;
   overflow-x: auto;
   word-wrap: break-word;
 }
@@ -99,15 +99,6 @@ a {
   justify-content: space-between;
 }
 
-.box {
-  background-color: var(--color-2);
-  color: var(--color-1);
-}
-
-.box2 {
-  background-color: var(--color-1);
-  color: var(--color-2);
-}
 /* pop up block in => readmore... */
 #box {
   background-color: var(--color-1);
@@ -155,7 +146,7 @@ a {
 
 #box .close:hover {
   color: aliceblue;
-  animation: rotate-z-360 3s infinite forwards;
+  animation: rotate-z-360 3s forwards;
 }
 
 /* responsive view */
@@ -211,13 +202,9 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-  table {
-    width: 100%;
-  }
   table,
   th,
   td {
-    border-radius: 10px;
     line-height: 25px;
   }
   #box {
