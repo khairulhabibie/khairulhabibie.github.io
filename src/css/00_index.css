@@ -83,12 +83,11 @@ a {
 .button {
   padding: 5px;
   margin: 5px;
-  background-color: var(--color-1);
   border-radius: 10px;
+  background-color: var(--color-1);
   color: var(--color-2);
 }
 
-.hover:hover,
 .button:hover {
   background-color: var(--color-2);
   color: var(--color-1);
@@ -257,21 +256,22 @@ a {
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--color-2); 
+  background: var(--color-2);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-1); 
+  background: var(--color-1);
 }

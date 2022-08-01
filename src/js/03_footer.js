@@ -1,6 +1,5 @@
 $(document).ready(() => {
   $('footer span')
-    .addClass('hover')
     .click(() => {
       icon = `success`;
       title = `Hello`;

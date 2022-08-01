@@ -19,6 +19,9 @@ footer span {
   padding: 5px;
   border-radius: 10px;
   font-weight: 800;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  cursor: pointer;
 }
 
 footer .scroll-top {
