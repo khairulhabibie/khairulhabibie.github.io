@@ -1,0 +1,44 @@
+[
+  {
+    "id": 6,
+    "img": "./img/projects/06.webp",
+    "text": "A Note App",
+    "text2": "REACTJS",
+    "link": "https://noteapp.khairulhabibie.my.id/"
+  },
+  {
+    "id": 5,
+    "img": "./img/projects/05.webp",
+    "text": "A Bookshelf App",
+    "text2": "HTML-CSS-JS",
+    "link": "https://codepen.io/khairulhabibie/details/abKyabm"
+  },
+  {
+    "id": 4,
+    "img": "./img/projects/04.webp",
+    "text": "A Cafe Menu",
+    "text2": "HTML-CSS",
+    "link": "https://codepen.io/khairulhabibie/details/RwJZYNQ"
+  },
+  {
+    "id": 3,
+    "img": "./img/projects/03.webp",
+    "text": "A Registration Form",
+    "text2": "HTML-CSS ",
+    "link": "https://codepen.io/khairulhabibie/details/qBKXMOm"
+  },
+  {
+    "id": 2,
+    "img": "./img/projects/02.webp",
+    "text": "A Nutrition Label",
+    "text2": "HTML-CSS",
+    "link": "https://codepen.io/khairulhabibie/details/poKrOvM"
+  },
+  {
+    "id": 1,
+    "img": "./img/projects/01.webp",
+    "text": "A Survey Form",
+    "text2": "HTML-CSS ",
+    "link": "https://codepen.io/khairulhabibie/details/oNyePXe"
+  }
+]

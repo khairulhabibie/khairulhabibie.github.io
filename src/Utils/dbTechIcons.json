@@ -1,0 +1,12 @@
+[
+  { "id": "1", "className": "devicon-react-original colored" },
+  { "id": "2", "className": "devicon-javascript-plain colored" },
+  { "id": "3", "className": "devicon-jquery-plain-wordmark colored" },
+  { "id": "4", "className": "devicon-css3-plain-wordmark colored" },
+  { "id": "5", "className": "devicon-bootstrap-plain-wordmark colored" },
+  { "id": "6", "className": "devicon-html5-plain-wordmark colored" },
+  { "id": "7", "className": "devicon-nodejs-plain colored" },
+  { "id": "8", "className": "devicon-mysql-plain-wordmark colored" },
+  { "id": "9", "className": "devicon-git-plain-wordmark colored" },
+  { "id": "10", "className": "devicon-visualstudio-plain-wordmark colored" }
+]
