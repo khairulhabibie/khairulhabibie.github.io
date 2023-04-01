@@ -6,7 +6,7 @@ const Cover = () => {
     <div id="cover" className="cover">
       <div className="container ">
         <img
-          src="./img/profile/khairulhabibie.webp"
+          src="https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297503/portofolio.khairulhabibie.my.id/khairulhabibie_lyxqwr.webp"
           alt="khairul_habibie_img"
         />
         <h1>Khairul Habibie</h1>

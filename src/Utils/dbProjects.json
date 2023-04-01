@@ -1,44 +1,38 @@
 [
   {
     "id": 6,
-    "img": "./img/projects/06.webp",
+    "img": "https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297382/portofolio.khairulhabibie.my.id/A_Note_App_ukrlfj.webp",
     "text": "A Note App",
-    "text2": "REACTJS",
     "link": "https://noteapp.khairulhabibie.my.id/"
   },
   {
     "id": 5,
-    "img": "./img/projects/05.webp",
+    "img": "https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297382/portofolio.khairulhabibie.my.id/A_Bookshelf_App_gkbayo.webp",
     "text": "A Bookshelf App",
-    "text2": "HTML-CSS-JS",
     "link": "https://codepen.io/khairulhabibie/details/abKyabm"
   },
   {
     "id": 4,
-    "img": "./img/projects/04.webp",
+    "img": "https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297382/portofolio.khairulhabibie.my.id/A_Cafe_Menu_cf9qcv.webp",
     "text": "A Cafe Menu",
-    "text2": "HTML-CSS",
     "link": "https://codepen.io/khairulhabibie/details/RwJZYNQ"
   },
   {
     "id": 3,
-    "img": "./img/projects/03.webp",
+    "img": "https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297381/portofolio.khairulhabibie.my.id/A_Registration_Form_uqrqwq.webp",
     "text": "A Registration Form",
-    "text2": "HTML-CSS ",
     "link": "https://codepen.io/khairulhabibie/details/qBKXMOm"
   },
   {
     "id": 2,
-    "img": "./img/projects/02.webp",
+    "img": "https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297382/portofolio.khairulhabibie.my.id/A_Nutrition_Label_stiyts.webp",
     "text": "A Nutrition Label",
-    "text2": "HTML-CSS",
     "link": "https://codepen.io/khairulhabibie/details/poKrOvM"
   },
   {
     "id": 1,
-    "img": "./img/projects/01.webp",
+    "img": "https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297382/portofolio.khairulhabibie.my.id/A_Survey_Form_v59zie.webp",
     "text": "A Survey Form",
-    "text2": "HTML-CSS ",
     "link": "https://codepen.io/khairulhabibie/details/oNyePXe"
   }
 ]
