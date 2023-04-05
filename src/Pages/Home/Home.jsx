@@ -16,7 +16,7 @@ export default class Home extends Component {
   render() {
     return (
       <>
-        <Navbar />
+        {/* <Navbar /> */}
         <Cover />
         <About />
         <Skill />
