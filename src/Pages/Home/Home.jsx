@@ -4,7 +4,7 @@ import "./Home.css";
 import "./Animation.css";
 
 // component
-import Navbar from "../../Container/Navbar/Navbar";
+// import Navbar from "../../Container/Navbar/Navbar";
 import Cover from "../../Container/Cover/Cover";
 import About from "../../Container/About/About";
 import Skill from "../../Container/Skill/Skill";
