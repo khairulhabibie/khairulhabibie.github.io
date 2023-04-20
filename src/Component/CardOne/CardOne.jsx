@@ -11,7 +11,7 @@ const CardOne = ({ img, text, link }) => {
       </div>
       <a href={link} target="_blank" rel="noreferrer">
         <p>
-          {text} <GoLink class="icon" />
+          {text} <GoLink className="icon" />
         </p>
       </a>
     </div>
