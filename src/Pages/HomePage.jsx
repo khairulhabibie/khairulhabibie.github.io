@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import Navbar from "../Container/Navbar";
 import Cover from "../Container/Cover/Cover";
 import About from "../Container/About/About";
 import Skill from "../Container/Skill/Skill";
