@@ -1,14 +1,13 @@
-import "./About.scss";
+
 import React from "react";
 
 const About = () => {
   return (
-    <div id="about" className="about">
-      <div className="container">
-        <h1>about me</h1>
-        <div className="article">
+    <div id="about" className="bg-blue-950 md:px-10 px-5 py-10">
+       <h1 className="text-4xl font-bold">About Me</h1>
+        <div className="mt-3">
           <h2>Summary</h2>
-          <article>
+          <article className="md:text-justify">
             Front-End Developer with a proven ability to collaborate effectively
             with senior developers while spending extra time to be mentored.
             Enjoy working closely with team members to ensure workloads are
@@ -19,8 +18,8 @@ const About = () => {
             my passion for coding to a talented engineering team to develop
             quality solutions.
           </article>
-        </div>
-      </div>
+
+       </div>
     </div>
   );
 };
