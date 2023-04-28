@@ -1,13 +1,11 @@
-
 import React from "react";
 
-const About = () => {
+const Cover = () => {
   return (
-    <div id="about" className="bg-blue-950 md:px-10 px-5 py-10">
-       <h1 className="text-4xl font-bold">About Me</h1>
-        <div className="mt-3">
-          <h2>Summary</h2>
-          <article className="md:text-justify">
+    <div id="cover" className="flex">
+      <div className="w-4/6">
+          <h2 className="text-2xl">Summary</h2>
+          <article>
             Front-End Developer with a proven ability to collaborate effectively
             with senior developers while spending extra time to be mentored.
             Enjoy working closely with team members to ensure workloads are
@@ -18,10 +16,15 @@ const About = () => {
             my passion for coding to a talented engineering team to develop
             quality solutions.
           </article>
-
-       </div>
+      </div>
+      <div className="w-2/6">
+        <img 
+            src="https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297503/portofolio.khairulhabibie.my.id/khairulhabibie_lyxqwr.webp"
+            alt="khairul_habibie_img"
+          />
+      </div>
     </div>
   );
 };
 
-export default About;
+export default Cover;

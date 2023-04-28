@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 // import Navbar from "../Container/Navbar";
-import Cover from "../Container/Cover/Cover";
-import About from "../Container/About";
+import Cover from "../Container/Cover";
 import Skill from "../Container/Skill/Skill";
 import Project from "../Container/Project/Project";
 import Messege from "../Container/Messege/Messege";
@@ -13,7 +12,6 @@ export default class HomePage extends Component {
       <>
         {/* <Navbar /> */}
         <Cover />
-        <About />
         <Skill />
         <Project />
         <Messege />
