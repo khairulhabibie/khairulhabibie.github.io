@@ -9,7 +9,6 @@ import AboutPage from "./Pages/AboutPage";
 
 const app = () => {
   return (
-    
     <Routes>
       <Route path="/" exact element={<HomePage />}></Route>
       <Route path="/404" element={<PageNotFound />}></Route>

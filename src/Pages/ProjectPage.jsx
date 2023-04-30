@@ -1,13 +1,24 @@
-import React from "react";
+import React, { Component } from "react";
 import Navbar from "../Container/Navbar";
+import Projects from "../Container/Projects";
 
-const ProjectPage = () => {
-  return (
-    <>
-      <Navbar />
-      <div className="mt-28 mx-24">ProjectPage</div>
-    </>
-  );
-};
+// data
+import { getProjects } from "../Utils/project-data";
 
-export default ProjectPage;
+export default class ProjectPage extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      projects: getProjects(),
+    };
+  }
+  render() {
+    return (
+      <>
+        <Navbar />
+        <Projects projects={this.state.projects} />
+      </>
+    );
+  }
+}
