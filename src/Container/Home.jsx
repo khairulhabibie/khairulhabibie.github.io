@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -15,17 +16,17 @@ const Home = () => {
               and redefine fundamental concepts through mental models.
             </p>
           </div>
-          <div className="flex my-8 font-bold">
-            <div className="rounded-md px-4 py-2 text-lg border border-gray-300 mr-4">
+          <div className="flex my-8 font-bold space-x-4">
+            <div className="rounded-md px-4 py-2 text-lg border border-gray-300 hover:bg-blue-700">
               Read the blog
             </div>
-            <div className="rounded-md px-4 py-2 text-lg border border-gray-300">
-              Learn more about me
+            <div className="rounded-md px-4 py-2 text-lg border border-gray-300 hover:bg-blue-700">
+              <Link to="/about">Learn more about me</Link>
             </div>
           </div>
-          <div className="flex">
-            <div className="mr-6">Resume</div>
-            <div className="mr-6">khairulhabibie</div>
+          <div className="flex space-x-6">
+            <div>Resume</div>
+            <div>khairulhabibie</div>
             <div>khairulhabibie</div>
           </div>
         </div>

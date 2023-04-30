@@ -6,19 +6,19 @@ const Navbar = () => {
   return (
     <nav className="flex flex-row justify-between relative top-10 left-0 right-0 mx-24">
       <ul className="flex felx-row justify-between space-x-4">
-        <li>
+        <li className="hover:bg-blue-700 rounded-md px-1">
           <Link to="/.">Home</Link>
         </li>
-        <li>
+        <li className="hover:bg-blue-700 rounded-md px-1">
           <Link to="/blog">Blog</Link>
         </li>
-        <li>
-          <Link to="/project">Project</Link>
+        <li className="hover:bg-blue-700 rounded-md px-1">
+          <Link to="/projects">Project</Link>
         </li>
-        <li>
-          <Link to="/Library">Library</Link>
+        <li className="hover:bg-blue-700 rounded-md px-1">
+          <Link to="/library">Library</Link>
         </li>
-        <li>
+        <li className="hover:bg-blue-700 rounded-md px-1">
           <Link to="/about">About</Link>
         </li>
       </ul>
