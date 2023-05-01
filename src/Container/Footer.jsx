@@ -1,4 +1,6 @@
 import React from "react";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -15,16 +17,24 @@ const Footer = () => {
         <li>Subscribe</li>
         <li>RSS</li>
       </ul>
-      <div className="mb-7">
+      <div className="my-7 space-y-2">
         <p>Reach me out</p>
-        <ul className="flex justify-center gap-5 mt-1 text-gray-400">
-          <li>Email</li>
-          <li>Github</li>
-          <li>Linkedin</li>
-          <li>Twitter</li>
+        <ul className="flex justify-center gap-5 mt-1 text-gray-400 text-2xl">
+          <li>
+            <MdOutlineMailOutline />
+          </li>
+          <li>
+            <FaGithub />
+          </li>
+          <li>
+            <FaLinkedin />
+          </li>
+          <li>
+            <FaTwitter />
+          </li>
         </ul>
       </div>
-      <p>© Khairul Habibie</p>
+      <p className="text-gray-400">© Khairul Habibie - Got any feedback?</p>
     </div>
   );
 };

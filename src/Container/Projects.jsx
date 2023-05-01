@@ -5,7 +5,7 @@ const Projects = ({ projects }) => {
   return (
     <div className="mt-28 mx-24 ">
       <div className="mb-4">
-        <h1 className="text-3xl mb-1">Projects</h1>
+        <h1 className="font-bold text-3xl mb-1">Projects</h1>
         <p>Showcase of my works on frontend development.</p>
       </div>
       <div className="flex flex-wrap justify-between">
