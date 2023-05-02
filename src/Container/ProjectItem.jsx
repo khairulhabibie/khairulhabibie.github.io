@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ProjectItem = ({ title, body, img, tags, link, isLinkActive }) => {
+const ProjectItem = ({ title, body, img, tags, link }) => {
   return (
     <div className="relative w-1/3 border border-gray-500 p-4 rounded-md aspect-square">
       <h1 className="font-bold">{title}</h1>
@@ -12,11 +12,7 @@ const ProjectItem = ({ title, body, img, tags, link, isLinkActive }) => {
           <img src={img} alt={title} />
         </figure>
         <div className="font-bold text-blue-300 text-right">
-          {isLinkActive === true ? (
-            <Link to={`/projects/${link}`}>See more {`>> `}</Link>
-          ) : (
-            "No detail !"
-          )}
+          <Link to={`/projects/${link}`}>See more {`>> `}</Link>
         </div>
       </div>
     </div>
