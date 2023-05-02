@@ -4,8 +4,8 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className=" mt-10 mx-24 text-center">
-      <ul className="flex flex-row flex-wrap justify-evenly border-t-2 border-gray-500 py-5 space-x-6 gap-y-1 text-sm text-gray-400">
+    <div className=" mt-10 md:mx-24 mx-4 text-center">
+      <ul className="flex flex-row flex-wrap justify-evenly border-t-2 border-gray-500 py-5 gap-x-3 gap-y-1 text-sm text-gray-400">
         <li>Source Code</li>
         <li>Desaign</li>
         <li>Doc</li>
