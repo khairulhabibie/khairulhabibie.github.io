@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
     <>
       <Navbar />
-      <div className="mt-28 mx-24">
+      <div className="mt-28 md:mx-24 mx-4">
         <About />
       </div>
       <Footer />
