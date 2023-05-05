@@ -8,7 +8,7 @@ const Projects = ({ projects }) => {
         <h1 className="font-bold text-3xl mb-1">Projects</h1>
         <p>Showcase of my works on frontend development.</p>
       </div>
-      <div className="flex flex-wrap md:justify-between justify-center gap-y-12 gap-x-1 w-full container">
+      <div className="gap-3 w-full container mx-auto md:columns-3 sm:columns-2 ">
         {projects.map((project) => {
           return <ProjectItem key={project.id} id={project.id} {...project} />;
         })}
