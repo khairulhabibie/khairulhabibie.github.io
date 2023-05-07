@@ -23,8 +23,11 @@ const Navbar = () => {
           <li className="hover:bg-gray-700 rounded-md px-1">
             <Link to="/about">About</Link>
           </li>
+          <li className="hover:bg-gray-700 rounded-md px-1">
+            <Link to="/message">Message</Link>
+          </li>
         </ul>
-        <button>X</button>
+        <button></button>
       </nav>
     </>
   );

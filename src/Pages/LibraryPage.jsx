@@ -6,7 +6,7 @@ const LibraryPage = () => {
   return (
     <>
       <Navbar />
-      <div  className="mt-28 mx-24">LibraryPage</div>
+      <div className="mt-28 mx-24">LibraryPage</div>
       <Footer />
     </>
   );

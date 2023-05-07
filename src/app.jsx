@@ -8,6 +8,7 @@ import NoteApp from "./Container/Project/NoteApp";
 import ProjectNoTFound from "./Container/Project/ProjectNoTFound";
 import LibraryPage from "./Pages/LibraryPage";
 import AboutPage from "./Pages/AboutPage";
+import MessagePage from "./Pages/MessagePage";
 
 const app = () => {
   return (
@@ -23,6 +24,7 @@ const app = () => {
       <Route path="/projects/*" element={<ProjectNoTFound />}></Route>
       <Route path="/library" element={<LibraryPage />}></Route>
       <Route path="/about" element={<AboutPage />}></Route>
+      <Route path="/message" element={<MessagePage />}></Route>
     </Routes>
   );
 };
