@@ -1,26 +1,21 @@
-import React, { Component } from "react";
+import * as React from "react";
 import Navbar from "../Container/Navbar";
 import Projects from "../Container/Projects";
-import Footer from '../Container/Footer'
+import Footer from "../Container/Footer";
 
 // data
 import { getProjects } from "../Utils/project-data";
 
-export default class ProjectPage extends Component {
-  constructor(props) {
-    super(props);
+const ProjectPage = () => {
+  const [projects] = React.useState(() => getProjects());
 
-    this.state = {
-      projects: getProjects(),
-    };
-  }
-  render() {
-    return (
-      <>
-        <Navbar />
-        <Projects projects={this.state.projects} />
-        <Footer />
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <Navbar />
+      <Projects projects={projects} />
+      <Footer />
+    </>
+  );
+};
+
+export default ProjectPage;

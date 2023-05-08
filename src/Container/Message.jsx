@@ -72,7 +72,7 @@ export default class Message extends Component {
     return (
       <div
         id="messege"
-        className="text-center w-full max-w-2xl h-screen mx-auto mt-12 "
+        className="text-center w-full max-w-2xl h-screen mx-auto mt-28 "
       >
         <h1 className="text-3xl">Messege</h1>
         <h1 className="text-2xl font-extrabold">

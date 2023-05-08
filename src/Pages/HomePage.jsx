@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import * as React from "react";
 import Navbar from "../Container/Navbar";
 import Home from "../Container/Home";
-import Footer from '../Container/Footer'
+import Footer from "../Container/Footer";
 
-export default class HomePage extends Component {
-  render() {
-    return (
-      <>
-        <Navbar />
-        <Home />
-        <Footer />
-      </>
-    );
-  }
-}
+const HomePage = () => {
+  return (
+    <>
+      <Navbar />
+      <Home />
+      <Footer />
+    </>
+  );
+};
+
+export default HomePage;
