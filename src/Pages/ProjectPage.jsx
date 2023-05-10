@@ -4,7 +4,7 @@ import Projects from "../Container/Projects";
 import Footer from "../Container/Footer";
 
 // data
-import { getProjects } from "../Utils/project-data";
+import { getProjects } from "../Utils/projects-data";
 
 const ProjectPage = () => {
   const [projects] = React.useState(() => getProjects());

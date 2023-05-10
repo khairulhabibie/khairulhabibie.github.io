@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import PageNotFound from "./Pages/PageNotFound";
 import BlogPage from "./Pages/BlogPage";
@@ -16,12 +16,15 @@ const app = () => {
       <Route path="/" element={<HomePage />}></Route>
       <Route path="/404" element={<PageNotFound />}></Route>
       <Route path="/*" element={<PageNotFound />}></Route>
-      {/* <Route path="*" element={<Navigate to="/404" />}></Route> */}
+      <Route path="*" element={<Navigate to="/404" />}></Route>
       <Route path="/blog" element={<BlogPage />}></Route>
       <Route path="/projects" element={<ProjectPage />}></Route>
       <Route path="/projects/note-app" element={<NoteApp />}></Route>
       <Route path="/projects/404" element={<ProjectNoTFound />}></Route>
-      <Route path="/projects/*" element={<ProjectNoTFound />}></Route>
+      <Route
+        path="/projects/*"
+        element={<Navigate to="/projects/404" />}
+      ></Route>
       <Route path="/library" element={<LibraryPage />}></Route>
       <Route path="/about" element={<AboutPage />}></Route>
       <Route path="/message" element={<MessagePage />}></Route>

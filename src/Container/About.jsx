@@ -4,7 +4,7 @@ import { FaNodeJs, FaReact } from "react-icons/fa";
 
 const About = () => {
   return (
-    <>
+    <section className="mt-28 md:mx-24 mx-4">
       <div className="mb-5 text-2xl font-bold">
         <h1>About</h1>
         <h1>Khairul Habibie</h1>
@@ -69,7 +69,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
