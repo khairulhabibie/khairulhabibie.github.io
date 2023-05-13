@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { SiTailwindcss, SiJavascript } from "react-icons/si";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 

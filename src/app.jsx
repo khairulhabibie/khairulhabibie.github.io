@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import PageNotFound from "./Pages/PageNotFound";
