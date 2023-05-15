@@ -72,7 +72,7 @@ export default class Message extends Component {
     return (
       <div
         id="messege"
-        className="text-center w-full max-w-2xl h-screen mx-auto mt-28 "
+        className="w-full h-screen max-w-2xl mx-auto text-center mt-28 "
       >
         <h1 className="text-3xl">Messege</h1>
         <h1 className="text-2xl font-extrabold">
@@ -80,7 +80,7 @@ export default class Message extends Component {
         </h1>
         <form
           onSubmit={this.onSubmitHandler}
-          className="flex flex-col gap-1 mt-12 px-5 py-10 shadow-sm shadow-slate-400"
+          className="flex flex-col gap-1 px-5 py-10 mt-12 shadow-sm shadow-slate-400"
         >
           <div className="space-x-1">
             <input

@@ -4,7 +4,7 @@ import { FaNodeJs, FaReact } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="mt-28 md:mx-24 mx-4">
+    <section className="mx-4 mt-28 md:mx-24">
       <div className="mb-5 text-2xl font-bold">
         <h1>About</h1>
         <h1>Khairul Habibie</h1>
@@ -43,7 +43,7 @@ const About = () => {
             </article>
           </div>
           <div className="my-20 space-y-4">
-            <h1 className="font-bold text-2xl">Current Favorite Tech Stack</h1>
+            <h1 className="text-2xl font-bold">Current Favorite Tech Stack</h1>
             <ul className="flex space-x-3 text-4xl ">
               <li>
                 <FaReact />
@@ -60,7 +60,7 @@ const About = () => {
             </ul>
           </div>
           <div className="my-5 space-y-2">
-            <h1 className="font-bold text-2xl">Contact</h1>
+            <h1 className="text-2xl font-bold">Contact</h1>
             <p className="text-gray-300">
               Do contact me if you need my opinion about web development,
               especially frontend works. I'll be happy to help! (find my email

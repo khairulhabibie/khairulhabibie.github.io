@@ -1,12 +1,12 @@
 import * as React from "react";
 import Navbar from "../Container/Navbar";
-import Footer from '../Container/Footer'
+import Footer from "../Container/Footer";
 
 const LibraryPage = () => {
   return (
     <>
       <Navbar />
-      <div className="mt-28 mx-24">LibraryPage</div>
+      <div className="mx-24 mt-28">LibraryPage</div>
       <Footer />
     </>
   );

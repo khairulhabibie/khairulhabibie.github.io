@@ -5,25 +5,25 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="h-2 w-full bg-yellow-400"></div>
-      <nav className="flex flex-row justify-between relative top-10 left-0 right-0 md:mx-24 mx-4">
-        <ul className="flex felx-row justify-between space-x-4">
-          <li className="hover:bg-gray-700 rounded-md px-1">
+      <div className="w-full h-2 bg-yellow-400"></div>
+      <nav className="relative left-0 right-0 flex flex-row justify-between mx-4 top-10 md:mx-24">
+        <ul className="flex justify-between space-x-4 felx-row">
+          <li className="px-1 rounded-md hover:bg-gray-700">
             <Link to="/.">Home</Link>
           </li>
-          {/* <li className="hover:bg-gray-700 rounded-md px-1">
+          {/* <li className="px-1 rounded-md hover:bg-gray-700">
           <Link to="/blog">Blog</Link>
         </li> */}
-          <li className="hover:bg-gray-700 rounded-md px-1">
+          <li className="px-1 rounded-md hover:bg-gray-700">
             <Link to="/projects">Project</Link>
           </li>
-          {/* <li className="hover:bg-gray-700 rounded-md px-1">
+          {/* <li className="px-1 rounded-md hover:bg-gray-700">
           <Link to="/library">Library</Link>
         </li> */}
-          <li className="hover:bg-gray-700 rounded-md px-1">
+          <li className="px-1 rounded-md hover:bg-gray-700">
             <Link to="/about">About</Link>
           </li>
-          <li className="hover:bg-gray-700 rounded-md px-1">
+          <li className="px-1 rounded-md hover:bg-gray-700">
             <Link to="/message">Message</Link>
           </li>
         </ul>
