@@ -7,9 +7,9 @@ export default class Message extends Component {
     this.state = {
       formMessege: {
         id: "",
-        name: "",
+        firstName: "",
+        lastName: "",
         email: "",
-        subject: "",
         messege: "",
       },
       isLoading: false,
@@ -70,55 +70,102 @@ export default class Message extends Component {
 
   render() {
     return (
-      <div
-        id="messege"
-        className="w-full h-screen max-w-2xl mx-auto text-center mt-28 "
-      >
-        <h1 className="text-3xl">Messege</h1>
-        <h1 className="text-2xl font-extrabold">
-          OPEN FOR HIRING AND COLLABORATION
-        </h1>
-        <form
-          onSubmit={this.onSubmitHandler}
-          className="flex flex-col gap-1 px-5 py-10 mt-12 shadow-sm shadow-slate-400"
-        >
-          <div className="space-x-1">
-            <input
-              type="text"
-              placeholder="Name"
-              name="name"
-              value={this.state.name}
-              onChange={this.onFormChangeHandler}
-              required
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              name="email"
-              value={this.state.email}
-              onChange={this.onFormChangeHandler}
-              required
-            />
+      <div id="messege" className="w-full max-w-2xl mx-auto py-28 ">
+        <div class="max-w-screen-md mx-auto p-5">
+          <div class="text-center mb-16">
+            <p class="mt-4 text-sm leading-7 text-gray-500 font-regular uppercase">
+              Contact
+            </p>
+            <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+              Get In <span class="text-sky-600">Touch</span>
+            </h3>
           </div>
-          <input
-            type="subject"
-            placeholder="Subject"
-            name="subject"
-            value={this.state.subject}
-            onChange={this.onFormChangeHandler}
-            required
-          />
-          <textarea
-            value={this.state.messege}
-            name="messege"
-            onChange={this.onFormChangeHandler}
-            placeholder="Messege"
-            rows={4}
-            required
-          ></textarea>
-          <button type="submit">
-            {this.state.isLoading ? "Loading..." : "Send"}
-          </button>
+        </div>
+
+        <form class="w-full" onSubmit={this.onSubmitHandler}>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="first-name"
+              >
+                First Name
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="first-name"
+                type="text"
+                placeholder="First Name"
+                value={this.state.firstName}
+                onChange={this.onFormChangeHandler}
+                required
+              />
+              <p class="text-red-500 text-xs italic">
+                Please fill out this field.
+              </p>
+            </div>
+
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="last-name"
+              >
+                Last Name
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="last-name"
+                type="text"
+                placeholder="Last Name"
+                value={this.state.lastName}
+                onChange={this.onFormChangeHandler}
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="email"
+              >
+                Email Address
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="email"
+                type="email"
+                placeholder="********@*****.**"
+                value={this.state.lastName}
+                onChange={this.onFormChangeHandler}
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="message"
+              >
+                Your Message
+              </label>
+              <textarea
+                id="message"
+                rows="10"
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                value={this.state.messege}
+                onChange={this.onFormChangeHandler}
+              ></textarea>
+            </div>
+            <div class="w-full px-3">
+              <button
+                class="shadow bg-sky-600 hover:bg-sky-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </div>
+          </div>
         </form>
       </div>
     );
