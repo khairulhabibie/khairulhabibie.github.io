@@ -12,9 +12,6 @@ export default class Message extends Component {
         email: "",
         messege: "",
       },
-      isLoading: false,
-      isError: false,
-      isSuccess: false,
     };
   }
 
@@ -28,13 +25,6 @@ export default class Message extends Component {
   onSubmitHandler = (event) => {
     event.preventDefault();
     const data = new FormData(event.target);
-    this.setState(() => {
-      return {
-        isLoading: true,
-        isSuccess: false,
-        isError: false,
-      };
-    });
     fetch(
       "https://script.google.com/macros/s/AKfycbxwoYHDWWwyThzseTHJUhmd1FC2wl-jbmZ-qpTyTTstHzJ99OZfwBd43calpy-qJ9s/exec",
       {
@@ -44,25 +34,11 @@ export default class Message extends Component {
     )
       .then((response) => response.json())
       .then((data) => {
-        this.setState(() => {
-          return {
-            isLoading: false,
-            isSuccess: true,
-            isError: false,
-          };
-        });
         alert("Data berhasil dikirim !");
         console.log("Success:", data);
         event.target.reset();
       })
       .catch((error) => {
-        this.setState(() => {
-          return {
-            isLoading: false,
-            isSuccess: false,
-            isError: true,
-          };
-        });
         alert("Data gagal dikirim");
         console.error("Error:", error);
       });
