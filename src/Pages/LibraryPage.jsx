@@ -1,8 +1,8 @@
-import * as React from "react";
-import Navbar from "../Container/Navbar";
-import Footer from "../Container/Footer";
+import * as React from 'react';
+import Navbar from '../Container/Navbar';
+import Footer from '../Container/Footer';
 
-const LibraryPage = () => {
+function LibraryPage() {
   return (
     <>
       <Navbar />
@@ -10,6 +10,6 @@ const LibraryPage = () => {
       <Footer />
     </>
   );
-};
+}
 
 export default LibraryPage;

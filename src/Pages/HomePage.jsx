@@ -1,9 +1,9 @@
-import * as React from "react";
-import Navbar from "../Container/Navbar";
-import Home from "../Container/Home";
-import Footer from "../Container/Footer";
+import * as React from 'react';
+import Navbar from '../Container/Navbar';
+import Home from '../Container/Home';
+import Footer from '../Container/Footer';
 
-const HomePage = () => {
+function HomePage() {
   return (
     <>
       <Navbar />
@@ -11,6 +11,6 @@ const HomePage = () => {
       <Footer />
     </>
   );
-};
+}
 
 export default HomePage;

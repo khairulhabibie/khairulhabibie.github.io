@@ -1,9 +1,9 @@
-import * as React from "react";
-import Navbar from "../Container/Navbar";
-import Footer from "../Container/Footer";
-import About from "../Container/About";
+import * as React from 'react';
+import Navbar from '../Container/Navbar';
+import Footer from '../Container/Footer';
+import About from '../Container/About';
 
-const AboutPage = () => {
+function AboutPage() {
   return (
     <>
       <Navbar />
@@ -11,6 +11,6 @@ const AboutPage = () => {
       <Footer />
     </>
   );
-};
+}
 
 export default AboutPage;

@@ -1,7 +1,7 @@
-import * as React from "react";
-import ProjectItem from "./ProjectItem";
+import * as React from 'react';
+import ProjectItem from './ProjectItem';
 
-const Projects = ({ projects }) => {
+function Projects({ projects }) {
   return (
     <div className="mx-4 mt-28 md:mx-24">
       <div className="mb-4">
@@ -15,5 +15,5 @@ const Projects = ({ projects }) => {
       </div>
     </div>
   );
-};
+}
 export default Projects;

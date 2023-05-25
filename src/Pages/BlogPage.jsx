@@ -1,17 +1,15 @@
-import * as React from "react";
-import Navbar from "../Container/Navbar";
-import Footer from '../Container/Footer'
+import * as React from 'react';
+import Navbar from '../Container/Navbar';
+import Footer from '../Container/Footer';
 
-const BlogPage = () => {
+function BlogPage() {
   return (
     <>
       <Navbar />
-      <div className="mt-28 mx-24">
-        <h1>BlogPage</h1>
-      </div>
+      <div className="mx-24 mt-28">INI BLOG PAGE</div>
       <Footer />
     </>
   );
-};
+}
 
 export default BlogPage;

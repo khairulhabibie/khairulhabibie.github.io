@@ -1,12 +1,12 @@
-import * as React from "react";
-import Navbar from "../Container/Navbar";
-import Projects from "../Container/Projects";
-import Footer from "../Container/Footer";
+import * as React from 'react';
+import Navbar from '../Container/Navbar';
+import Projects from '../Container/Projects';
+import Footer from '../Container/Footer';
 
 // data
-import { getProjects } from "../Utils/projects-data";
+import { getProjects } from '../Utils/projects-data';
 
-const ProjectPage = () => {
+function ProjectPage() {
   const [projects] = React.useState(() => getProjects());
 
   return (
@@ -16,6 +16,6 @@ const ProjectPage = () => {
       <Footer />
     </>
   );
-};
+}
 
 export default ProjectPage;

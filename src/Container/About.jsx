@@ -1,8 +1,8 @@
-import * as React from "react";
-import { SiTailwindcss, SiJavascript } from "react-icons/si";
-import { FaNodeJs, FaReact } from "react-icons/fa";
+import * as React from 'react';
+import { SiTailwindcss, SiJavascript } from 'react-icons/si';
+import { FaNodeJs, FaReact } from 'react-icons/fa';
 
-const About = () => {
+function About() {
   return (
     <section className="mx-4 mt-28 md:mx-24">
       <div className="mb-5 text-2xl font-bold">
@@ -22,7 +22,7 @@ const About = () => {
             </figure>
             <article className="space-y-4 text-gray-300 md:text-justify">
               <p>
-                Hello! I'm Khairul. I started learning web development in
+                Hello! I am Khairul. I started learning web development in
                 Januari 2022. I have nothing much to do so I decided to learn
                 web development from a dicoding course, then started watching a
                 bunch of youtube videos to explore more about web development
@@ -63,7 +63,7 @@ const About = () => {
             <h1 className="text-2xl font-bold">Contact</h1>
             <p className="text-gray-300">
               Do contact me if you need my opinion about web development,
-              especially frontend works. I'll be happy to help! (find my email
+              especially frontend works. I will be happy to help! (find my email
               in the footer)
             </p>
           </div>
@@ -71,6 +71,6 @@ const About = () => {
       </div>
     </section>
   );
-};
+}
 
 export default About;

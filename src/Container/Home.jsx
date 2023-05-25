@@ -1,9 +1,9 @@
-import * as React from "react";
-import { Link } from "react-router-dom";
-import { FaGithub, FaTwitter } from "react-icons/fa";
-import { MdContactPage } from "react-icons/md";
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import { FaGithub, FaTwitter } from 'react-icons/fa';
+import { MdContactPage } from 'react-icons/md';
 
-const Home = () => {
+function Home() {
   return (
     <>
       <section className="flex flex-col justify-center w-full h-screen">
@@ -11,7 +11,7 @@ const Home = () => {
           <div className="">
             <div className="mb-5 font-bold">
               <h2 className="text-xl md:text-3xl">Hi!</h2>
-              <h1 className="text-2xl  md:text-4xl">
+              <h1 className="text-2xl md:text-4xl">
                 You can call me Khairul Habibie
               </h1>
             </div>
@@ -31,7 +31,8 @@ const Home = () => {
 
           <ul className="flex flex-wrap gap-3">
             <li className="flex items-center space-x-1">
-              <MdContactPage /> <p>Resume</p>
+              <MdContactPage />
+              <p>Resume</p>
             </li>
             <li className="flex items-center space-x-1">
               <FaGithub />
@@ -49,6 +50,6 @@ const Home = () => {
       </div> */}
     </>
   );
-};
+}
 
 export default Home;
