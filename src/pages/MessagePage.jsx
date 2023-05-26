@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Navbar from '../Container/Navbar';
-import Message from '../Container/Message';
+import Navbar from '../container/Navbar';
+import Message from '../container/Message';
 
 function MessagePage() {
   return (

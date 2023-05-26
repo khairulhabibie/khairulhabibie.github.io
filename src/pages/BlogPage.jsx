@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Navbar from '../Container/Navbar';
-import Footer from '../Container/Footer';
+import Navbar from '../container/Navbar';
+import Footer from '../container/Footer';
 
 function BlogPage() {
   return (

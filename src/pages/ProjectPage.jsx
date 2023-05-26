@@ -1,10 +1,10 @@
 import * as React from 'react';
-import Navbar from '../Container/Navbar';
-import Projects from '../Container/Projects';
-import Footer from '../Container/Footer';
+import Navbar from '../container/Navbar';
+import Projects from '../container/Projects';
+import Footer from '../container/Footer';
 
 // data
-import { getProjects } from '../Utils/projects-data';
+import { getProjects } from '../utils/projects-data';
 
 function ProjectPage() {
   const [projects] = React.useState(() => getProjects());

@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import HomePage from './Pages/HomePage';
-import PageNotFound from './Pages/PageNotFound';
-import BlogPage from './Pages/BlogPage';
-import ProjectPage from './Pages/ProjectPage';
-import NoteApp from './Container/ProjectDetail/NoteApp';
-import ProjectNoTFound from './Container/ProjectDetail/ProjectNoTFound';
-import LibraryPage from './Pages/LibraryPage';
-import AboutPage from './Pages/AboutPage';
-import MessagePage from './Pages/MessagePage';
+import HomePage from './pages/HomePage';
+import PageNotFound from './pages/PageNotFound';
+import BlogPage from './pages/BlogPage';
+import ProjectPage from './pages/ProjectPage';
+import NoteApp from './container/ProjectDetail/NoteApp';
+import ProjectNoTFound from './container/ProjectDetail/ProjectNoTFound';
+import LibraryPage from './pages/LibraryPage';
+import AboutPage from './pages/AboutPage';
+import MessagePage from './pages/MessagePage';
 
 function App() {
   return (

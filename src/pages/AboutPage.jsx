@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Navbar from '../Container/Navbar';
-import Footer from '../Container/Footer';
-import About from '../Container/About';
+import Navbar from '../container/Navbar';
+import Footer from '../container/Footer';
+import About from '../container/About';
 
 function AboutPage() {
   return (
