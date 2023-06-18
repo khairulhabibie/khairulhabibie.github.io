@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaTwitter } from 'react-icons/fa';
-import { MdContactPage } from 'react-icons/md';
+// import { MdContactPage } from 'react-icons/md';
 
 function Home() {
   return (
@@ -22,25 +22,33 @@ function Home() {
           </div>
           <ul className="flex flex-wrap gap-4 my-8 font-bold">
             <li className="px-4 py-2 text-lg border border-gray-300 rounded-md hover:bg-gray-600 ">
-              Read the blog
+              <Link to="/projects">
+                <p>Read the Project</p>
+              </Link>
             </li>
             <li className="px-4 py-2 text-lg border border-gray-300 rounded-md hover:bg-gray-600 ">
-              <Link to="/about">Learn more about me</Link>
+              <Link to="/about">
+                <p>Learn more about me</p>
+              </Link>
             </li>
           </ul>
 
           <ul className="flex flex-wrap gap-3">
-            <li className="flex items-center space-x-1">
+            {/* <li className="flex items-center space-x-1">
               <MdContactPage />
               <p>Resume</p>
-            </li>
+            </li> */}
             <li className="flex items-center space-x-1">
               <FaGithub />
-              <p>khairulhabibie</p>
+              <a href="https://github.com/khairulhabibie" target="__blank">
+                <p>khairulhabibie</p>
+              </a>
             </li>
             <li className="flex items-center space-x-1">
               <FaTwitter />
-              <p>khairulhabibie</p>
+              <a href="https://twitter.com/khekhairul" target="__blank">
+                <p>khairulhabibie</p>
+              </a>
             </li>
           </ul>
         </div>

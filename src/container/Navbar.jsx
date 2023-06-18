@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-// import dbContacts from "../Utils/dbContacts.json";
 
 function Navbar() {
   return (
@@ -11,20 +10,11 @@ function Navbar() {
           <li className="px-1 rounded-md hover:bg-gray-700">
             <Link to="/.">Home</Link>
           </li>
-          {/* <li className="px-1 rounded-md hover:bg-gray-700">
-          <Link to="/blog">Blog</Link>
-        </li> */}
           <li className="px-1 rounded-md hover:bg-gray-700">
             <Link to="/projects">Project</Link>
           </li>
-          {/* <li className="px-1 rounded-md hover:bg-gray-700">
-          <Link to="/library">Library</Link>
-        </li> */}
           <li className="px-1 rounded-md hover:bg-gray-700">
             <Link to="/about">About</Link>
-          </li>
-          <li className="px-1 rounded-md hover:bg-gray-700">
-            <Link to="/message">Message</Link>
           </li>
         </ul>
       </nav>

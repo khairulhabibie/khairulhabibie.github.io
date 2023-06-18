@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ProjectItem from './ProjectItem';
 
-function Projects({ projects }) {
+function ProjectList({ projects }) {
   return (
     <div className="container mx-4 mt-28 md:mx-24">
       <div className="mb-4">
@@ -16,4 +16,5 @@ function Projects({ projects }) {
     </div>
   );
 }
-export default Projects;
+
+export default ProjectList;
