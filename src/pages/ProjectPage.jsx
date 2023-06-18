@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Projects from '../container/Projects';
+import ProjectList from '../container/ProjectList';
 
 // data
 import { getProjects } from '../utils/projects-data';
@@ -7,7 +7,7 @@ import { getProjects } from '../utils/projects-data';
 function ProjectPage() {
   const [projects] = React.useState(() => getProjects());
 
-  return <Projects projects={projects} />;
+  return <ProjectList projects={projects} />;
 }
 
 export default ProjectPage;
