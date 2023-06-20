@@ -1,5 +1,5 @@
 import * as React from 'react';
-import About from '../container/About';
+import About from '../component/About';
 
 function AboutPage() {
   return <About />;

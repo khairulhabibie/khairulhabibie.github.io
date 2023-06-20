@@ -3,8 +3,8 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
 import AboutPage from './pages/AboutPage';
-import Navbar from './container/Navbar';
-import Footer from './container/Footer';
+import Navbar from './component/Navbar';
+import Footer from './component/Footer';
 
 function App() {
   return (
