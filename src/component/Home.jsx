@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaTwitter } from 'react-icons/fa';
+import { title, description, inLink } from '../utils/translate/home';
 // import { MdContactPage } from 'react-icons/md';
 
 function Home() {
@@ -11,30 +12,26 @@ function Home() {
           <div className="">
             <div className="mb-5 font-bold">
               <h2 className="text-xl md:text-3xl">Hi!</h2>
-              <h1 className="text-2xl md:text-4xl">
-                You can call me Khairul Habibie
-              </h1>
+              {title.map((text) => (
+                <h1 key={text.id} className="text-2xl md:text-4xl">
+                  {text.EN}
+                </h1>
+              ))}
             </div>
-            <p className="w-full text-lg md:w-5/6">
-              I work with React Ecosystem, and write to remember how to rebuild
-              and redefine fundamental concepts through mental models.
-            </p>
+            {description.map((text) => (
+              <p key={text.id} className="w-full text-lg md:w-5/6">
+                {text.EN}
+              </p>
+            ))}
           </div>
-          <ul className="flex flex-wrap gap-4 my-8 font-bold">
-            <li>
-              <Link to="/projects">
-                <p className="px-4 py-2 text-lg border border-gray-300 rounded-md hover:bg-gray-600 ">
-                  Read the Project
-                </p>
-              </Link>
-            </li>
-            <li>
-              <Link to="/about">
-                <p className="px-4 py-2 text-lg border border-gray-300 rounded-md hover:bg-gray-600 ">
-                  Learn more about me
-                </p>
-              </Link>
-            </li>
+          <ul className="flex flex-wrap gap-4 my-8">
+            {inLink.map((text) => (
+              <li key={text.id}>
+                <Link to={text.path}>
+                  <p className="navbar-btn ">{text.EN}</p>
+                </Link>
+              </li>
+            ))}
           </ul>
 
           <ul className="flex flex-wrap gap-3">
