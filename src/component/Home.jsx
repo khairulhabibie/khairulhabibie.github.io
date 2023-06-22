@@ -21,14 +21,18 @@ function Home() {
             </p>
           </div>
           <ul className="flex flex-wrap gap-4 my-8 font-bold">
-            <li className="px-4 py-2 text-lg border border-gray-300 rounded-md hover:bg-gray-600 ">
+            <li>
               <Link to="/projects">
-                <p>Read the Project</p>
+                <p className="px-4 py-2 text-lg border border-gray-300 rounded-md hover:bg-gray-600 ">
+                  Read the Project
+                </p>
               </Link>
             </li>
-            <li className="px-4 py-2 text-lg border border-gray-300 rounded-md hover:bg-gray-600 ">
+            <li>
               <Link to="/about">
-                <p>Learn more about me</p>
+                <p className="px-4 py-2 text-lg border border-gray-300 rounded-md hover:bg-gray-600 ">
+                  Learn more about me
+                </p>
               </Link>
             </li>
           </ul>
