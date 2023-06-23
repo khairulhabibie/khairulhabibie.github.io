@@ -1,13 +1,13 @@
-const description = [
+const mainDesc = [
   {
     id: 1,
-    EN: `Hello! I am Khairul. I started learning web development in Januari 2022. I have nothing much to do so I decided to learn web development from a dicoding course, then started watching a bunch of youtube videos to explore more about web development especially frontend development.`,
     ID: `Halo! Saya Khairul. Saya mulai belajar pengembangan web di Januari 2022. Saya tidak punya banyak pekerjaan jadi saya memutuskan untuk belajar pengembangan web dari kursus dicoding, lalu mulai menonton a banyak video youtube untuk menjelajahi lebih lanjut tentang pengembangan web terutama pengembangan frontend.`,
+    EN: `Hello! I am Khairul. I started learning web development in Januari 2022. I have nothing much to do so I decided to learn web development from a dicoding course, then started watching a bunch of youtube videos to explore more about web development especially frontend development.`,
   },
   {
     id: 2,
-    EN: `There are a lot of things and technologies to learn in frontend development and I am motivated to learn as much as possible. I enjoy learning something new and getting feedback to make myself better and improve.`,
     ID: `Ada banyak hal dan teknologi untuk dipelajari di frontend pengembangan dan saya termotivasi untuk belajar sebanyak mungkin. Saya menikmati belajar sesuatu yang baru dan mendapatkan umpan balik untuk membuat diri saya sendiri lebih baik dan tingkatkan.`,
+    EN: `There are a lot of things and technologies to learn in frontend development and I am motivated to learn as much as possible. I enjoy learning something new and getting feedback to make myself better and improve.`,
   },
   {
     id: 3,
@@ -17,7 +17,7 @@ const description = [
   },
 ];
 
-const contact_desc = [
+const contactDes = [
   {
     id: 1,
     ID: `Hubungi saya jika Anda membutuhkan pendapat saya tentang pengembangan web, terutama pekerjaan frontend. Saya akan dengan senang hati membantu! (cari email saya di footer)`,
@@ -25,4 +25,4 @@ const contact_desc = [
   },
 ];
 
-export { description, contact_desc };
+export { mainDesc, contactDes };

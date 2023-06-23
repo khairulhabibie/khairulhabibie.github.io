@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SiTailwindcss, SiJavascript } from 'react-icons/si';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
-import { description, contact_desc } from '../utils/translate/about';
+import { mainDesc, contactDes } from '../utils/translate/about';
 
 function About() {
   const image_url =
@@ -25,7 +25,7 @@ function About() {
               />
             </figure>
             <article className="space-y-4 text-gray-300 md:text-justify">
-              {description.map((text) => (
+              {mainDesc.map((text) => (
                 <p key={text.id}>{text.EN}</p>
               ))}
             </article>
@@ -50,7 +50,7 @@ function About() {
           <div className="my-5 space-y-2">
             <h1 className="text-2xl font-bold">Contact</h1>
             <p className="text-gray-300">
-              {contact_desc.map((text) => (
+              {contactDes.map((text) => (
                 <p key={text.id}>{text.EN}</p>
               ))}
             </p>
