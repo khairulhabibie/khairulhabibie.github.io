@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SiTailwindcss, SiJavascript } from 'react-icons/si';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
-import { mainDesc, contactDes } from '../utils/translate/about';
+import { aboutDesc, contactDesc } from '../utils/translate/about';
 
 function About() {
   const image_url =
@@ -11,7 +11,7 @@ function About() {
     <section className="mx-4 mt-28 md:mx-24">
       <div className="mb-5 text-2xl font-bold">
         <h1>About</h1>
-        <h1>Khairul Habibie</h1>
+        <h1 className="mb-1 text-3xl font-bold">Khairul Habibie</h1>
       </div>
       <div className="flex">
         <div>
@@ -25,7 +25,7 @@ function About() {
               />
             </figure>
             <article className="space-y-4 text-gray-300 md:text-justify">
-              {mainDesc.map((text) => (
+              {aboutDesc.map((text) => (
                 <p key={text.id}>{text.EN}</p>
               ))}
             </article>
@@ -47,14 +47,14 @@ function About() {
               </li>
             </ul>
           </div>
-          <div className="my-5 space-y-2">
-            <h1 className="text-2xl font-bold">Contact</h1>
-            <p className="text-gray-300">
-              {contactDes.map((text) => (
-                <p key={text.id}>{text.EN}</p>
-              ))}
-            </p>
-          </div>
+          {contactDesc.map((text) => (
+            <div key={text.id} className="my-5 space-y-2">
+              <h1 className="text-2xl font-bold">{text.title.ID}</h1>
+              <div className="text-gray-300">
+                <p>{text.body.ID}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

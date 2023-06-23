@@ -1,4 +1,4 @@
-const mainDesc = [
+const aboutDesc = [
   {
     id: 1,
     ID: `Halo! Saya Khairul. Saya mulai belajar pengembangan web di Januari 2022. Saya tidak punya banyak pekerjaan jadi saya memutuskan untuk belajar pengembangan web dari kursus dicoding, lalu mulai menonton a banyak video youtube untuk menjelajahi lebih lanjut tentang pengembangan web terutama pengembangan frontend.`,
@@ -17,12 +17,18 @@ const mainDesc = [
   },
 ];
 
-const contactDes = [
+const contactDesc = [
   {
     id: 1,
-    ID: `Hubungi saya jika Anda membutuhkan pendapat saya tentang pengembangan web, terutama pekerjaan frontend. Saya akan dengan senang hati membantu! (cari email saya di footer)`,
-    EN: `Do contact me if you need my opinion about web development, especially frontend works. I will be happy to help! (find my email in the footer)`,
+    title: {
+      ID: `Kontak`,
+      EN: `Contact`,
+    },
+    body: {
+      ID: `Hubungi saya jika Anda membutuhkan pendapat saya tentang pengembangan web, terutama pekerjaan frontend. Saya akan dengan senang hati membantu! (cari email saya di footer)`,
+      EN: `Do contact me if you need my opinion about web development, especially frontend works. I will be happy to help! (find my email in the footer)`,
+    },
   },
 ];
 
-export { mainDesc, contactDes };
+export { aboutDesc, contactDesc };
