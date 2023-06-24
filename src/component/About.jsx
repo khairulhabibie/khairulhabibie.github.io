@@ -1,16 +1,13 @@
 import * as React from 'react';
 import { SiTailwindcss, SiJavascript } from 'react-icons/si';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
-import { aboutDesc, contactDesc } from '../utils/translate/about';
+import { aboutText } from '../utils/translate/about-text';
 
 function About() {
-  const image_url =
-    'https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297503/portofolio.khairulhabibie.my.id/khairulhabibie_lyxqwr.webp';
-
   return (
     <section className="mx-4 mt-28 md:mx-24">
       <div className="mb-5 text-2xl font-bold">
-        <h1>About</h1>
+        <h1>{aboutText.about.title[`EN`]}</h1>
         <h1 className="mb-1 text-3xl font-bold">Khairul Habibie</h1>
       </div>
       <div className="flex">
@@ -20,13 +17,13 @@ function About() {
               <img
                 className="hidden sm:block"
                 width="200px"
-                src={image_url}
+                src={aboutText.img_url}
                 alt="khairul-habibie.webp"
               />
             </figure>
             <article className="space-y-4 text-gray-300 md:text-justify">
-              {aboutDesc.map((text) => (
-                <p key={text.id}>{text.EN}</p>
+              {aboutText.about.body.map((text) => (
+                <p key={text.id}>{text[`EN`]}</p>
               ))}
             </article>
           </div>
@@ -47,14 +44,14 @@ function About() {
               </li>
             </ul>
           </div>
-          {contactDesc.map((text) => (
-            <div key={text.id} className="my-5 space-y-2">
-              <h1 className="text-2xl font-bold">{text.title.ID}</h1>
-              <div className="text-gray-300">
-                <p>{text.body.ID}</p>
-              </div>
+          <div className="my-5 space-y-2">
+            <h1 className="text-2xl font-bold">
+              {aboutText.contact.title[`EN`]}
+            </h1>
+            <div className="text-gray-300">
+              <p>{aboutText.contact.body[`EN`]}</p>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>

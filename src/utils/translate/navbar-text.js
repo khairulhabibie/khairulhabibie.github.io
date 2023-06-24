@@ -1,4 +1,4 @@
-const inLink = [
+const navbarText = [
   {
     id: '1',
     path: '/',
@@ -19,4 +19,4 @@ const inLink = [
   },
 ];
 
-export { inLink };
+export { navbarText };

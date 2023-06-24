@@ -1,23 +1,13 @@
 import * as React from 'react';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { footerText } from '../utils/translate/footer-text';
 
 function Footer() {
-  const lists = [
-    { id: 1, name: 'Source Code' },
-    { id: 2, name: 'Desaign' },
-    { id: 3, name: 'Doc' },
-    { id: 4, name: 'Book Notes' },
-    { id: 5, name: 'Starter Temlilate' },
-    { id: 6, name: 'Analytics' },
-    { id: 7, name: 'Guestbook' },
-    { id: 8, name: 'Subscribe' },
-    { id: 9, name: 'RSS' },
-  ];
   return (
     <div className="mx-4 mt-10 text-center md:mx-24">
       <ul className="flex flex-row flex-wrap py-5 text-sm text-gray-400 border-t-2 border-gray-500 justify-evenly gap-x-3 gap-y-1">
-        {lists.map((list) => (
+        {footerText.map((list) => (
           <li key={list.id}>{list.name}</li>
         ))}
       </ul>
