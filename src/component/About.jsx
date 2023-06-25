@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { SiTailwindcss, SiJavascript } from 'react-icons/si';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
 import { aboutText } from '../utils/translate/about-text';

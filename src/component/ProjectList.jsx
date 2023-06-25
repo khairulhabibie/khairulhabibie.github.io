@@ -1,4 +1,3 @@
-import * as React from 'react';
 import ProjectItem from './ProjectItem';
 
 function ProjectList({ projects }) {
