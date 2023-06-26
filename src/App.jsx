@@ -4,6 +4,7 @@ import ProjectPage from './pages/ProjectPage';
 import AboutPage from './pages/AboutPage';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/projects/*" element={<Navigate to="/projects" />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/about/*" element={<Navigate to="/about" />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
       <Footer />
     </div>
