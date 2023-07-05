@@ -3,9 +3,9 @@ import ProjectItem from './ProjectItem';
 function ProjectList({ projects }) {
   return (
     <div className="w-full gap-3 mx-auto md:columns-3 sm:columns-2">
-      {projects.map((project) => {
-        return <ProjectItem key={project.id} id={project.id} {...project} />;
-      })}
+      {projects.map((project) => (
+        <ProjectItem key={project.id} id={project.id} {...project} />
+      ))}
     </div>
   );
 }
