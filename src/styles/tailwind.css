@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.navbar-btn {
-  @apply px-4 py-2 text-lg font-bold border border-gray-300 rounded-md hover:bg-gray-600;
+.btn {
+  @apply px-4 py-2 hover:bg-gray-700;
 }

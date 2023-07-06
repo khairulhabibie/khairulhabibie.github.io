@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { homeText } from '../utils/translate/home-text';
 function HomePage() {
   return (
-    <div className="flex flex-col justify-center w-full h-screen mx-4 md:mx-24 md:-mt-32">
+    <div className="container flex flex-col justify-center w-full h-screen mx-4 md:mx-24 md:-mt-32">
       <div className="mb-5 font-bold">
         <h2 className="text-xl md:text-3xl">Hi!</h2>
         <h1 className="text-2xl md:text-4xl">{homeText.title[`EN`]}</h1>
@@ -12,7 +12,7 @@ function HomePage() {
         {homeText.inLink.map((text) => (
           <li key={text.id}>
             <Link to={text.path}>
-              <p className="navbar-btn ">{text.EN}</p>
+              <p className="border border-solid btn">{text.EN}</p>
             </Link>
           </li>
         ))}
