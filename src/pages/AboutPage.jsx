@@ -4,10 +4,11 @@ import { aboutText } from '../utils/translate/about-text';
 
 function AboutPage() {
   return (
-    <div className="mx-4 mt-28 md:mx-24">
+    <>
       <div className="mb-5 text-2xl font-bold">
-        <h1>{aboutText.about.title[`EN`]}</h1>
-        <h1 className="mb-1 text-3xl font-bold">Khairul Habibie</h1>
+        <h1 className="mb-1 text-3xl font-bold">
+          {aboutText.about.title[`EN`]}
+        </h1>
       </div>
       <div className="flex">
         <div>
@@ -53,7 +54,7 @@ function AboutPage() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -3,8 +3,8 @@ const aboutText = {
     'https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297503/portofolio.khairulhabibie.my.id/khairulhabibie_lyxqwr.webp',
   about: {
     title: {
-      ID: `Tentang`,
-      EN: `About`,
+      ID: `TENTANG SAYA`,
+      EN: `ABOUT ME`,
     },
     body: [
       {

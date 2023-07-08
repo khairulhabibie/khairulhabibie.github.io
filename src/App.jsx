@@ -9,18 +9,20 @@ import RegisterPage from './pages/RegisterPage';
 
 function App() {
   return (
-    <div className="text-white bg-black">
+    <div className="h-full min-h-screen text-white bg-black">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/*" element={<Navigate to="/" />} />
-        <Route path="/projects" element={<ProjectPage />} />
-        <Route path="/projects/*" element={<Navigate to="/projects" />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/about/*" element={<Navigate to="/about" />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-      </Routes>
+      <div className="mt-28">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/*" element={<Navigate to="/" />} />
+          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/projects/*" element={<Navigate to="/projects" />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/about/*" element={<Navigate to="/about" />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

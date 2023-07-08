@@ -9,9 +9,9 @@ function RegisterPage() {
     // navigate('/');
   };
   return (
-    <div className="h-screen mx-4 mt-12 md:mx-24">
+    <>
       <RegisterInput register={onRegister} />
-    </div>
+    </>
   );
 }
 

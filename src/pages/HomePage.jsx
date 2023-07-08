@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { homeText } from '../utils/translate/home-text';
 function HomePage() {
   return (
-    <div className="flex flex-col justify-center h-screen mx-4 md:mx-24 md:-mt-32">
+    <div className="flex flex-col">
       <div className="mb-5 font-bold">
         <h2 className="text-xl md:text-3xl">Hi!</h2>
         <h1 className="text-2xl md:text-4xl">{homeText.title[`EN`]}</h1>
