@@ -9,9 +9,9 @@ import RegisterPage from './pages/RegisterPage';
 
 function App() {
   return (
-    <div className="h-full min-h-screen text-white bg-black">
+    <div className="h-full min-h-screen text-white bg-black max-w-[900px] mx-auto">
       <Navbar />
-      <div className="mt-28">
+      <div className="px-5 py-28">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/*" element={<Navigate to="/" />} />
