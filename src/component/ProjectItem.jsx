@@ -28,7 +28,7 @@ ProjectItem.propTypes = {
   title: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
   imgUrl: PropTypes.string.isRequired,
-  tags: PropTypes.string.isRequired,
+  tags: PropTypes.array.isRequired,
   link: PropTypes.string.isRequired,
 };
 

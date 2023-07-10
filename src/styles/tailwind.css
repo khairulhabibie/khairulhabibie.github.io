@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply text-white bg-black;
+}
+
 .form {
   @apply flex flex-col gap-4 font-bold;
 }
@@ -12,4 +16,8 @@
 
 .btn {
   @apply px-4 py-2 hover:bg-yellow-500 hover:text-black;
+}
+
+.nav-btn {
+  @apply flex items-center px-4 py-2 space-x-2 hover:bg-yellow-500 hover:text-black;
 }

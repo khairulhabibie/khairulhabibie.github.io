@@ -4,20 +4,20 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 function Footer() {
   return (
     <div className="fixed bottom-0 left-0 right-0 space-y-2 bg-black border-t">
-      <ul className="flex justify-center gap-5 py-2 mt-1 text-2xl text-gray-400">
-        <li>
+      <div className="flex justify-center gap-5 text-2xl text-gray-400">
+        <div className="btn">
           <MdOutlineMailOutline />
-        </li>
-        <li>
+        </div>
+        <div className="btn">
           <FaGithub />
-        </li>
-        <li>
+        </div>
+        <div className="btn">
           <FaLinkedin />
-        </li>
-        <li>
+        </div>
+        <div className="btn">
           <FaTwitter />
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 }
