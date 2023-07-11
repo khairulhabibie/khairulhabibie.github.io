@@ -1,4 +1,5 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
 import AboutPage from './pages/AboutPage';
@@ -9,14 +10,16 @@ import BlogPage from './pages/BlogPage';
 // import Footer from './component/Footer';
 
 function App() {
+  const { pathname } = useLocation();
+
   return (
     <div className="h-full min-h-screen max-w-[900px] mx-auto">
-      <Navbar />
+      <Navbar pathname={pathname} />
       <div className="px-5 py-28">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/*" element={<Navigate to="/" />} />
-          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/project" element={<ProjectPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/login" element={<LoginPage />} />

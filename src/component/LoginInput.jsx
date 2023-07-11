@@ -26,7 +26,7 @@ function LoginInput({ login }) {
         <button
           type="submit"
           onClick={() => login({ email, password })}
-          className="p-1 text-xl text-white bg-blue-900"
+          className="p-1 text-xl text-white bg-blue-700 hover:bg-blue-950"
         >
           Login
         </button>
