@@ -35,7 +35,7 @@ function RegisterInput({ register }) {
         <button
           type="submit"
           onClick={() => register({ name, email, password })}
-          className="p-1 text-xl text-white bg-blue-700 hover:bg-blue-950"
+          className="p-1 text-xl text-white bg-green-600 hover:bg-green-900"
         >
           Register
         </button>

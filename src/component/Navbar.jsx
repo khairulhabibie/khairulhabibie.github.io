@@ -1,13 +1,19 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaHome, FaBloggerB } from 'react-icons/fa';
 import { RiProfileFill } from 'react-icons/ri';
 import { AiFillProject } from 'react-icons/ai';
 import { IoMdLogIn, IoMdLogOut } from 'react-icons/io';
+import { BiNotepad } from 'react-icons/bi';
 
 function Navbar({ pathname }) {
+  const navigate = useNavigate();
   const active = (data) => {
     return pathname === data ? 'nav-btn-active' : 'nav-btn';
   };
+  function logOutHandler() {
+    alert('User Berhasil Log Out !');
+    navigate('/');
+  }
 
   return (
     <nav className="fixed top-0 left-0 right-0 flex flex-wrap justify-between bg-black border-b ">
@@ -35,9 +41,13 @@ function Navbar({ pathname }) {
           <p>Login</p>
         </Link>
         <Link to="/register" className={active('/register')}>
-          <IoMdLogOut />
+          <BiNotepad />
           <p>Register</p>
         </Link>
+        <button onClick={logOutHandler} className="nav-btn">
+          <IoMdLogOut />
+          <p>LogOut</p>
+        </button>
       </div>
     </nav>
   );
