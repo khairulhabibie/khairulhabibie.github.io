@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
@@ -13,6 +13,13 @@ import TreePage from './pages/TreePage';
 
 function App() {
   const { pathname } = useLocation();
+  useEffect(() => {
+    if (pathname === '/') {
+      document.title = 'Profile | Khairul Habibie';
+    } else {
+      document.title = pathname.toUpperCase();
+    }
+  }, [pathname]);
 
   return (
     <div className="h-full min-h-screen max-w-[900px] mx-auto">
