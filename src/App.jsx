@@ -15,9 +15,9 @@ function App() {
   const { pathname } = useLocation();
   useEffect(() => {
     if (pathname === '/') {
-      document.title = 'Profile | Khairul Habibie';
+      document.title = 'WEB | Khairul Habibie';
     } else {
-      document.title = pathname.toUpperCase();
+      document.title = pathname.slice(1, pathname.length).toUpperCase();
     }
   }, [pathname]);
 

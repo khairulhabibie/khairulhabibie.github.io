@@ -11,17 +11,13 @@ function Navbar({ pathname }) {
     return pathname === data ? 'nav-btn-active' : 'nav-btn';
   };
   function logOutHandler() {
-    alert('the user has logged out successfully !');
+    alert('The user has logged out successfully!');
     navigate('/');
   }
-
   return (
-    <nav className="fixed top-0 left-0 right-0 flex-wrap bg-black border-b md:justify-between md:flex ">
-      <div className="static flex flex-col md:relative">
-        <div className="relative md:hidden nav-btn peer">
-          <p>BURGER MENU</p>
-        </div>
-        <div className="flex-col flex-wrap hidden md:flex md:flex-row peer:block">
+    <nav className="fixed top-0 left-0 right-0 flex-wrap bg-black border-b md:justify-between md:flex">
+      <section className="static flex flex-col md:relative">
+        <div className="flex flex-row flex-wrap">
           <Link to="/" className={active('/')}>
             <FaHome />
             <p>Home</p>
@@ -39,8 +35,8 @@ function Navbar({ pathname }) {
             <p>About</p>
           </Link>
         </div>
-      </div>
-      <div className="hidden md:flex">
+      </section>
+      <section className="hidden md:flex">
         <Link to="/login" className={active('/login')}>
           <IoMdLogIn />
           <p>Login</p>
@@ -53,7 +49,7 @@ function Navbar({ pathname }) {
           <IoMdLogOut />
           <p>LogOut</p>
         </button>
-      </div>
+      </section>
     </nav>
   );
 }
