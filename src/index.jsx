@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 // style
 import './styles/tailwind.css';
+import './styles/animation.css';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
