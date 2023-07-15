@@ -34,11 +34,15 @@ function Navbar({ pathname }) {
             <RiProfileFill />
             <p>About</p>
           </Link>
-  <Link to="/ranah" className={active('/about')}>
+  <Link to="/ranah" className={active('/ramah')}>
             <RiProfileFill />
             <p>Ranah</p>
           </Link>
-        </div>
+
+  <Link to="/tree" className={active('/tree')}>
+            <RiProfileFill />
+            <p>Tree</p>
+          </Link>        </div>
       </section>
       <section className="hidden md:flex">
         <Link to="/login" className={active('/login')}>
