@@ -34,6 +34,10 @@ function Navbar({ pathname }) {
             <RiProfileFill />
             <p>About</p>
           </Link>
+  <Link to="/ranah" className={active('/about')}>
+            <RiProfileFill />
+            <p>Ranah</p>
+          </Link>
         </div>
       </section>
       <section className="hidden md:flex">
