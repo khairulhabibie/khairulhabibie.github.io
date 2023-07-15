@@ -4,6 +4,8 @@ import { RiProfileFill } from 'react-icons/ri';
 import { AiFillProject } from 'react-icons/ai';
 import { IoMdLogIn, IoMdLogOut } from 'react-icons/io';
 import { BiNotepad } from 'react-icons/bi';
+import { SiLinktree } from 'react-icons/si';
+import { TbBrandLinktree } from 'react-icons/tb';
 
 function Navbar({ pathname }) {
   const navigate = useNavigate();
@@ -34,15 +36,15 @@ function Navbar({ pathname }) {
             <RiProfileFill />
             <p>About</p>
           </Link>
-  <Link to="/ranah" className={active('/ramah')}>
-            <RiProfileFill />
+          <Link to="/ranah" className={active('/ranah')}>
+            <TbBrandLinktree />
             <p>Ranah</p>
           </Link>
-
-  <Link to="/tree" className={active('/tree')}>
-            <RiProfileFill />
+          <Link to="/tree" className={active('/tree')}>
+            <SiLinktree />
             <p>Tree</p>
-          </Link>        </div>
+          </Link>
+        </div>
       </section>
       <section className="hidden md:flex">
         <Link to="/login" className={active('/login')}>

@@ -12,13 +12,8 @@ function AboutPage() {
       <div className="flex">
         <div>
           <div className="container">
-            <figure className="float-right">
-              <img
-                className="hidden sm:block"
-                width="200px"
-                src={img_url}
-                alt="khairul-habibie.webp"
-              />
+            <figure className="float-right hidden sm:block">
+              <img width="200px" src={img_url} alt="khairul-habibie.webp" />
             </figure>
             <article className="space-y-4 text-gray-300 md:text-justify">
               <p>
@@ -45,17 +40,17 @@ function AboutPage() {
           <div className="space-y-4 my-7">
             <h1 className="text-2xl font-bold">Current Favorite Tech Stack</h1>
             <ul className="flex space-x-3 text-4xl ">
-              <li className="hover:text-blue-500 hover:bg-white">
+              <li className="hover:text-blue-500 ">
                 <FaReact />
               </li>
               <li className="hover:text-yellow-500 hover:bg-white">
                 <SiJavascript />
               </li>
               <li>
-                <SiTailwindcss className="hover:text-blue-500 hover:bg-white" />
+                <SiTailwindcss className="hover:text-blue-400 " />
               </li>
               <li>
-                <FaNodeJs className="hover:text-green-700 hover:bg-white" />
+                <FaNodeJs className="hover:text-green-700 " />
               </li>
             </ul>
           </div>

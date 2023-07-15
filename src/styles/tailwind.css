@@ -19,7 +19,7 @@ body {
 }
 
 .btn-submit {
-  @apply p-1 text-xl text-white duration-1000 bg-green-600 rounded-full hover:bg-green-900;
+  @apply p-1 text-xl text-white duration-1000 bg-green-600 rounded-lg hover:bg-green-900;
 }
 
 .nav-btn {

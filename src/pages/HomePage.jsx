@@ -16,12 +16,12 @@ function HomePage() {
       <ul className="flex flex-wrap gap-4 my-8">
         <li>
           <Link to="/project">
-            <p className="border border-solid btn">Read the Project</p>
+            <p className="btn rounded-lg">Read the Project</p>
           </Link>
         </li>
         <li>
           <Link to="/about">
-            <p className="border border-solid btn">Learn more about me</p>
+            <p className="btn rounded-lg">Learn more about me</p>
           </Link>
         </li>
       </ul>
