@@ -10,7 +10,7 @@ function RegisterInput({ register }) {
   return (
     <>
       <h1 className="mb-1 text-3xl font-bold">REGISTER</h1>
-      <form action="" className="form">
+      <form className="form">
         <input
           type="text"
           value={name}
@@ -34,7 +34,7 @@ function RegisterInput({ register }) {
         />
         <button
           type="submit"
-          onClick={() => register({ name, email, password })}
+          onClick={(e) => register(e, { name, email, password })}
           className="btn-submit"
         >
           Register
