@@ -25,7 +25,7 @@ function LoginInput({ login }) {
         />
         <button
           type="submit"
-          onClick={() => login({ email, password })}
+          onClick={(e) => login(e, { email, password })}
           className="btn-submit"
         >
           Login

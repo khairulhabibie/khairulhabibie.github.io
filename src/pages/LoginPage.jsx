@@ -2,8 +2,9 @@ import React from 'react';
 import LoginInput from '../component/LoginInput';
 
 function LoginPage() {
-  const onLogin = ({ email, password }) => {
-    console.log({ email, password });
+  const onLogin = (e, { email, password }) => {
+    e.preventDefault();
+    console.log('ini dara login', { email, password });
   };
   return (
     <>
