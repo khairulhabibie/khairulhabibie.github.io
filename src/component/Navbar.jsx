@@ -32,10 +32,6 @@ function Navbar({ pathname }) {
             <FaBloggerB />
             <p>Blog</p>
           </Link>
-          <Link to="/about" className={active('/about')}>
-            <RiProfileFill />
-            <p>About</p>
-          </Link>
           <Link to="/ranah" className={active('/ranah')}>
             <TbBrandLinktree />
             <p>Ranah</p>
@@ -43,6 +39,10 @@ function Navbar({ pathname }) {
           <Link to="/tree" className={active('/tree')}>
             <SiLinktree />
             <p>Tree</p>
+          </Link>
+          <Link to="/about" className={active('/about')}>
+            <RiProfileFill />
+            <p>About</p>
           </Link>
         </div>
       </section>
