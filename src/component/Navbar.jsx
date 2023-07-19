@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaHome, FaBloggerB } from 'react-icons/fa';
 import { RiProfileFill } from 'react-icons/ri';
@@ -7,7 +8,7 @@ import { BiNotepad } from 'react-icons/bi';
 import { SiLinktree } from 'react-icons/si';
 import { TbBrandLinktree } from 'react-icons/tb';
 
-function Navbar({ pathname }) {
+function Navbar({ pathname, authed }) {
   const navigate = useNavigate();
   const active = (data) => {
     return pathname === data ? 'nav-btn-active' : 'nav-btn';
@@ -16,6 +17,24 @@ function Navbar({ pathname }) {
     alert('The user has logged out successfully!');
     navigate('/');
   }
+
+  if (authed === false) {
+    return (
+      <nav className="fixed top-0 left-0 right-0 flex-wrap bg-black border-b md:justify-center md:flex">
+        <section className="hidden md:flex">
+          <Link to="/login" className={active('/login')}>
+            <IoMdLogIn />
+            <p>Login</p>
+          </Link>
+          <Link to="/register" className={active('/register')}>
+            <BiNotepad />
+            <p>Register</p>
+          </Link>
+        </section>
+      </nav>
+    );
+  }
+
   return (
     <nav className="fixed top-0 left-0 right-0 flex-wrap bg-black border-b md:justify-between md:flex">
       <section className="static flex flex-col md:relative">
@@ -47,14 +66,6 @@ function Navbar({ pathname }) {
         </div>
       </section>
       <section className="hidden md:flex">
-        <Link to="/login" className={active('/login')}>
-          <IoMdLogIn />
-          <p>Login</p>
-        </Link>
-        <Link to="/register" className={active('/register')}>
-          <BiNotepad />
-          <p>Register</p>
-        </Link>
         <button onClick={logOutHandler} className="nav-btn">
           <IoMdLogOut />
           <p>LogOut</p>

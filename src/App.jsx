@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
@@ -12,6 +12,7 @@ import TreePage from './pages/TreePage';
 // import Footer from './component/Footer';
 
 function App() {
+  const [authed] = useState(false);
   const { pathname } = useLocation();
   useEffect(() => {
     if (pathname === '/') {
@@ -21,18 +22,30 @@ function App() {
     }
   }, [pathname]);
 
+  if (authed === false) {
+    return (
+      <div className="h-full min-h-screen max-w-[900px] mx-auto">
+        <Navbar pathname={pathname} authed={authed} />
+        <div className="px-5 py-28">
+          <Routes>
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" exact element={<RegisterPage />} />
+          </Routes>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="h-full min-h-screen max-w-[900px] mx-auto">
       <Navbar pathname={pathname} />
       <div className="px-5 py-28">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" exact element={<HomePage />} />
           <Route path="/*" element={<Navigate to="/" />} />
           <Route path="/project" element={<ProjectPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<RegisterPage />} />
           <Route path="/ranah" element={<RanahPage />} />
           <Route path="/tree" element={<TreePage />} />
         </Routes>
