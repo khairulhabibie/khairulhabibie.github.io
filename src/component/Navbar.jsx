@@ -1,22 +1,20 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FaHome, FaBloggerB } from 'react-icons/fa';
 import { RiProfileFill } from 'react-icons/ri';
 import { AiFillProject } from 'react-icons/ai';
-import { IoMdLogIn, IoMdLogOut } from 'react-icons/io';
+import { IoMdLogIn } from 'react-icons/io';
 import { BiNotepad } from 'react-icons/bi';
-import { SiLinktree } from 'react-icons/si';
-import { TbBrandLinktree } from 'react-icons/tb';
 
 function Navbar({ pathname, authed }) {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const active = (data) => {
     return pathname === data ? 'nav-btn-active' : 'nav-btn';
   };
-  function logOutHandler() {
-    alert('The user has logged out successfully!');
-    navigate('/');
-  }
+  // function logOutHandler() {
+  //   alert('The user has logged out successfully!');
+  //   navigate('/');
+  // }
 
   if (authed === false) {
     return (
@@ -36,7 +34,7 @@ function Navbar({ pathname, authed }) {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 flex-wrap bg-black border-b md:justify-between md:flex">
+    <nav className="fixed top-0 left-0 right-0 flex-wrap border-b md:justify-between md:flex">
       <section className="static flex flex-col md:relative">
         <div className="flex flex-row flex-wrap">
           <Link to="/" className={active('/')}>
@@ -51,26 +49,18 @@ function Navbar({ pathname, authed }) {
             <FaBloggerB />
             <p>Blog</p>
           </Link>
-          <Link to="/ranah" className={active('/ranah')}>
-            <TbBrandLinktree />
-            <p>Ranah</p>
-          </Link>
-          <Link to="/tree" className={active('/tree')}>
-            <SiLinktree />
-            <p>Tree</p>
-          </Link>
           <Link to="/about" className={active('/about')}>
             <RiProfileFill />
             <p>About</p>
           </Link>
         </div>
       </section>
-      <section className="hidden md:flex">
+      {/* <section className="hidden md:flex">
         <button onClick={logOutHandler} className="nav-btn">
           <IoMdLogOut />
           <p>LogOut</p>
         </button>
-      </section>
+      </section> */}
     </nav>
   );
 }

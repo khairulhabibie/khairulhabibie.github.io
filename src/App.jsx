@@ -7,12 +7,10 @@ import Navbar from './component/Navbar';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import BlogPage from './pages/BlogPage';
-import RanahPage from './pages/RanahPage';
-import TreePage from './pages/TreePage';
 // import Footer from './component/Footer';
 
 function App() {
-  const [authed] = useState(false);
+  const [authed] = useState(true);
   const { pathname } = useLocation();
   useEffect(() => {
     if (pathname === '/') {
@@ -46,8 +44,6 @@ function App() {
           <Route path="/project" element={<ProjectPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route path="/ranah" element={<RanahPage />} />
-          <Route path="/tree" element={<TreePage />} />
         </Routes>
       </div>
       {/* <Footer /> */}

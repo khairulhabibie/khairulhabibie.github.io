@@ -7,12 +7,12 @@ function AboutPage() {
   return (
     <>
       <section className="mb-5 text-2xl font-bold">
-        <h1 className="mb-1 text-3xl font-bold">ABOUT ME</h1>
+        <h1 className="mb-1 text-3xl font-bold">ABOUT</h1>
       </section>
       <div className="flex">
         <div>
           <div className="container">
-            <figure className="float-right hidden sm:block">
+            <figure className="hidden float-right sm:block">
               <img width="200px" src={img_url} alt="khairul-habibie.webp" />
             </figure>
             <article className="space-y-4 text-gray-300 md:text-justify">
@@ -40,17 +40,17 @@ function AboutPage() {
           <div className="space-y-4 my-7">
             <h1 className="text-2xl font-bold">Current Favorite Tech Stack</h1>
             <ul className="flex space-x-3 text-4xl ">
-              <li className="hover:text-blue-500 ">
+              <li className="hover:text-blue-500 hover:animate-pulse">
                 <FaReact />
               </li>
-              <li className="hover:text-yellow-500 hover:bg-white">
+              <li className="hover:text-yellow-500 hover:bg-white hover:animate-pulse">
                 <SiJavascript />
               </li>
               <li>
-                <SiTailwindcss className="hover:text-blue-400 " />
+                <SiTailwindcss className="hover:text-blue-400 hover:animate-pulse" />
               </li>
               <li>
-                <FaNodeJs className="hover:text-green-700 " />
+                <FaNodeJs className="hover:text-green-700 hover:animate-pulse" />
               </li>
             </ul>
           </div>
