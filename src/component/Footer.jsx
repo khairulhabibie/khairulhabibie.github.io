@@ -1,5 +1,5 @@
-import { MdOutlineMailOutline } from 'react-icons/md';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { MdOutlineMailOutline } from "react-icons/md";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (

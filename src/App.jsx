@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import ProjectPage from './pages/ProjectPage';
-import AboutPage from './pages/AboutPage';
-import Navbar from './component/Navbar';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import BlogPage from './pages/BlogPage';
+import React, { useEffect, useState } from "react";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ProjectPage from "./pages/ProjectPage";
+import AboutPage from "./pages/AboutPage";
+import Navbar from "./component/Navbar";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import BlogPage from "./pages/BlogPage";
 // import Footer from './component/Footer';
 
 function App() {
   const [authed] = useState(true);
   const { pathname } = useLocation();
   useEffect(() => {
-    if (pathname === '/') {
-      document.title = 'WEB | Khairul Habibie';
+    if (pathname === "/") {
+      document.title = "Khairul Habibie";
     } else {
       document.title = pathname.slice(1, pathname.length).toUpperCase();
     }
@@ -23,7 +23,7 @@ function App() {
   if (authed === false) {
     return (
       <div className="h-full min-h-screen max-w-[900px] mx-auto">
-        <Navbar pathname={pathname} authed={authed} />
+        <Navbar authed={authed} />
         <div className="px-5 py-28">
           <Routes>
             <Route path="/login" element={<LoginPage />} />
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="h-full min-h-screen max-w-[900px] mx-auto">
-      <Navbar pathname={pathname} />
+      <Navbar />
       <div className="px-5 py-28">
         <Routes>
           <Route path="/" exact element={<HomePage />} />

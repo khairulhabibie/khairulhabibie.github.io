@@ -1,67 +1,94 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaHome, FaBloggerB } from "react-icons/fa";
-import { RiProfileFill } from "react-icons/ri";
-import { AiFillProject } from "react-icons/ai";
-import { IoMdLogIn } from "react-icons/io";
-import { BiNotepad } from "react-icons/bi";
 
-function Navbar({ pathname, authed }) {
-  // const navigate = useNavigate();
-  const active = (data) => {
-    return pathname === data ? "nav-btn-active" : "nav-btn";
-  };
-  // function logOutHandler() {
-  //   alert('The user has logged out successfully!');
-  //   navigate('/');
-  // }
+function Navbar({ pathname }) {
+  const [line, setLine] = useState(null);
+  const [navpos, setNavpos] = useState(null);
+  const [navlist, setNavlist] = useState("hidden");
 
-  if (authed === false) {
-    return (
-      <nav className="fixed top-0 left-0 right-0 flex-wrap bg-slate-950 border-b md:justify-center md:flex">
-        <section className="hidden md:flex">
-          <Link to="/login" className={active("/login")}>
-            <IoMdLogIn />
-            <p>Login</p>
-          </Link>
-          <Link to="/register" className={active("/register")}>
-            <BiNotepad />
-            <p>Register</p>
-          </Link>
-        </section>
-      </nav>
-    );
+  function hamburgerLine() {
+    if (line === null && navlist !== null) {
+      setLine("hamburger-active");
+      setNavlist(null);
+    } else {
+      setLine(null);
+      setNavlist("hidden");
+    }
   }
 
+  window.onscroll = function () {
+    if (window.scrollY > 0) {
+      setNavpos("navbar-fixed");
+    } else {
+      setNavpos(null);
+    }
+  };
+
   return (
-    <nav className="fixed top-0 left-0 right-0 flex-wrap bg-slate-950 border-b md:justify-between md:flex">
-      <section className="static flex flex-col md:relative">
-        <div className="flex flex-row flex-wrap">
-          <Link to="/" className={active("/")}>
-            <FaHome />
-            <p>Home</p>
-          </Link>
-          <Link to="/project" className={active("/project")}>
-            <AiFillProject />
-            <p>Project</p>
-          </Link>
-          <Link to="/blog" className={active("/blog")}>
-            <FaBloggerB />
-            <p>Blog</p>
-          </Link>
-          <Link to="/about" className={active("/about")}>
-            <RiProfileFill />
-            <p>About</p>
-          </Link>
+    <>
+      <header
+        className={`bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ${navpos}`}
+      >
+        <div className="container  w-full mx-auto">
+          <div className="flex items-center justify-between relative">
+            <div className="px-4">
+              <a href="#home" className="font-bold text-lg  block py-6">
+                Khairul Habibie
+              </a>
+            </div>
+            <div className="flex items-center px-4">
+              <button
+                id="hamburger"
+                name="hamburger"
+                type="button"
+                className={`block absolute right-4 lg:hidden ${line}`}
+                onClick={hamburgerLine}
+              >
+                <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                <span className="hamburger-line transition duration-300 ease-in-out"></span>
+                <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+              </button>
+              <nav
+                className={` absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none ${navlist}`}
+              >
+                <ul className="block lg:flex ">
+                  <li className="group">
+                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                      Beranda
+                    </Link>
+                  </li>
+                  <li className="group">
+                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                      About
+                    </Link>
+                  </li>
+                  <li className="group">
+                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                      Portofolio
+                    </Link>
+                  </li>
+                  <li className="group">
+                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                      Clients
+                    </Link>
+                  </li>
+                  <li className="group">
+                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                      Blog
+                    </Link>
+                  </li>
+                  <li className="group">
+                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-      </section>
-      {/* <section className="hidden md:flex">
-        <button onClick={logOutHandler} className="nav-btn">
-          <IoMdLogOut />
-          <p>LogOut</p>
-        </button>
-      </section> */}
-    </nav>
+      </header>
+    </>
   );
 }
 

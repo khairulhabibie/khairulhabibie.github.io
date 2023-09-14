@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  @apply text-white bg-slate-950;
+  /* @apply text-white bg-slate-950; */
+  font-family: "Inter", sans-serif;
 }
 
 .form {
@@ -22,12 +23,25 @@ body {
   @apply p-1 text-xl text-white duration-1000 bg-green-600 rounded-lg hover:bg-green-900;
 }
 
-.nav-btn {
-  @apply flex items-center px-4 py-2 space-x-2 hover:text-black hover:bg-yellow-600;
+/* Navbar */
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-70;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-.nav-btn-active {
-  @apply flex items-center px-4 py-2 space-x-2 text-black bg-yellow-300;
-  /* animation: rainbow 2.5s linear;
-  animation-iteration-count: infinite; */
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
 }
