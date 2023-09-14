@@ -3,24 +3,7 @@
 @tailwind utilities;
 
 body {
-  /* @apply text-white bg-slate-950; */
   font-family: "Inter", sans-serif;
-}
-
-.form {
-  @apply flex flex-col gap-4 font-bold;
-}
-
-.input {
-  @apply px-5 py-2 text-black border-2 border-gray-300 border-solid;
-}
-
-.btn {
-  @apply px-4 py-2 duration-1000 bg-green-600 hover:bg-green-900;
-}
-
-.btn-submit {
-  @apply p-1 text-xl text-white duration-1000 bg-green-600 rounded-lg hover:bg-green-900;
 }
 
 /* Navbar */

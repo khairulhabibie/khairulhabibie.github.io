@@ -1,9 +1,8 @@
-import { SiTailwindcss, SiJavascript } from 'react-icons/si';
-import { FaNodeJs, FaReact } from 'react-icons/fa';
+import React from "react";
 
 function AboutPage() {
   const img_url =
-    'https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297503/portofolio.khairulhabibie.my.id/khairulhabibie_lyxqwr.webp';
+    "https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297503/portofolio.khairulhabibie.my.id/khairulhabibie_lyxqwr.webp";
   return (
     <>
       <section className="mb-5 text-2xl font-bold">
@@ -36,23 +35,6 @@ function AboutPage() {
                 way. So do contact me and I will be very happy to help!
               </p>
             </article>
-          </div>
-          <div className="space-y-4 my-7">
-            <h1 className="text-2xl font-bold">Current Favorite Tech Stack</h1>
-            <ul className="flex space-x-3 text-4xl ">
-              <li className="hover:text-blue-500 hover:animate-pulse">
-                <FaReact />
-              </li>
-              <li className="hover:text-yellow-500 hover:bg-white hover:animate-pulse">
-                <SiJavascript />
-              </li>
-              <li>
-                <SiTailwindcss className="hover:text-blue-400 hover:animate-pulse" />
-              </li>
-              <li>
-                <FaNodeJs className="hover:text-green-700 hover:animate-pulse" />
-              </li>
-            </ul>
           </div>
           <div className="space-y-2">
             <h1 className="text-2xl font-bold">Contact</h1>

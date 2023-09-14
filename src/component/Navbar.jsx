@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Navbar({ pathname }) {
+function Navbar() {
   const [line, setLine] = useState(null);
   const [navpos, setNavpos] = useState(null);
   const [navlist, setNavlist] = useState("hidden");
