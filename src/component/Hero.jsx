@@ -10,7 +10,7 @@ function Hero() {
             <h1 className="text-base font-semibold text-primary md:text-xl ">
               Helo Semua 👋,
               <span className="block font-bold text-dark text-4xl lg:text-4xl">
-                saya Khairul Habibie
+                Khairul Habibie
               </span>
             </h1>
             <h2 className="font-medium text-secondary text-lg mb-5 lg:text-2xl">
@@ -29,7 +29,7 @@ function Hero() {
             </Link>
           </div>
           <div className="w-full self-end px-4 lg:w-1/2">
-            <div className="relative mt-10 lg:mt-9 lg:right-0">
+            <div className="relative mt-10 lg:mt-0 lg:right-0">
               <img
                 src="https://res.cloudinary.com/de8q1kwuh/image/upload/v1680297503/portofolio.khairulhabibie.my.id/khairulhabibie_lyxqwr.webp"
                 alt="khairulhabibie.webp"

@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [line, setLine] = useState(null);
-  const [navpos, setNavpos] = useState(null);
+  const [hamburger, setHamburger] = useState("");
+  const [navpos, setNavpos] = useState("");
   const [navlist, setNavlist] = useState("hidden");
 
   function hamburgermenu() {
-    if (line === null && navlist !== null) {
-      setLine("hamburger-active");
-      setNavlist(null);
+    if (hamburger === "" && navlist !== "") {
+      setHamburger("hamburger-active");
+      setNavlist("");
     } else {
-      setLine(null);
+      setHamburger("");
       setNavlist("hidden");
     }
   }
@@ -20,7 +20,7 @@ function Navbar() {
     if (window.scrollY > 0) {
       setNavpos("navbar-fixed");
     } else {
-      setNavpos(null);
+      setNavpos("");
     }
   };
 
@@ -38,10 +38,7 @@ function Navbar() {
             </div>
             <div className="flex items-center px-4">
               <button
-                id="hamburger"
-                name="hamburger"
-                type="button"
-                className={`block absolute right-4 lg:hidden ${line}`}
+                className={`block absolute right-4 lg:hidden ${hamburger}`}
                 onClick={hamburgermenu}
               >
                 <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
@@ -49,7 +46,7 @@ function Navbar() {
                 <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
               </button>
               <nav
-                className={` absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none ${navlist}`}
+                className={`absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none ${navlist}`}
               >
                 <ul className="block lg:flex ">
                   <li className="group">
