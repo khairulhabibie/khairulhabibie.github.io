@@ -11,9 +11,10 @@ function Portofolio() {
               Projek Terbaru
             </h2>
             <p className="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Dignissimos optio nulla impedit excepturi, repudiandae minima
-              nesciunt temporibus dolorum fuga officia.
+              "Tiba di bagian paling kreatif! Di sini, Anda akan menemukan
+              koleksi projek yang mencakup landing page yang memukau dan
+              aplikasi dinamis yang dibuat dengan keahlian menggunakan ReactJS.
+              Sambut inovasi dalam desain dan pengembangan!"
             </p>
           </div>
         </div>

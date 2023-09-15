@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [hamburger, setHamburger] = useState("");
-  const [navpos, setNavpos] = useState("");
+  const [navpos, setNavpos] = useState("absolute");
+  const [navline, setNavline] = useState("");
   const [navlist, setNavlist] = useState("hidden");
 
   function hamburgermenu() {
-    if (hamburger === "" && navlist !== "") {
-      setHamburger("hamburger-active");
+    if (navline === "" && navlist !== "") {
+      setNavline("hamburger-active");
       setNavlist("");
     } else {
-      setHamburger("");
+      setNavline("");
       setNavlist("hidden");
     }
   }
@@ -20,14 +20,14 @@ function Navbar() {
     if (window.scrollY > 0) {
       setNavpos("navbar-fixed");
     } else {
-      setNavpos("");
+      setNavpos("absolute");
     }
   };
 
   return (
     <>
       <header
-        className={`bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ${navpos}`}
+        className={`top-0 left-0 w-full flex items-center z-10 ${navpos}`}
       >
         <div className="container  w-full mx-auto">
           <div className="flex items-center justify-between relative">
@@ -38,7 +38,7 @@ function Navbar() {
             </div>
             <div className="flex items-center px-4">
               <button
-                className={`block absolute right-4 lg:hidden ${hamburger}`}
+                className={`block absolute right-4 lg:hidden ${navline}`}
                 onClick={hamburgermenu}
               >
                 <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
