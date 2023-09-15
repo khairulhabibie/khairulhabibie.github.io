@@ -24,7 +24,7 @@ function Educations() {
           <div className="flex flex-wrap items-center justify-center">
             <Link className="w-1/6 mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
               <img
-                src="https://res.cloudinary.com/de8q1kwuh/image/upload/v1694752123/educations/unpad_ronhyw.png"
+                src="https://res.cloudinary.com/de8q1kwuh/image/upload/v1694762034/educations/unpad2_rj7lq7.png"
                 alt="unpad"
               />
             </Link>
@@ -42,7 +42,7 @@ function Educations() {
             </Link>
             <Link className="w-1/6 mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
               <img
-                src="https://res.cloudinary.com/de8q1kwuh/image/upload/v1694752121/educations/freecodecamp_bihgqg.png"
+                src="https://res.cloudinary.com/de8q1kwuh/image/upload/v1694762120/educations/freecodecamp2_sp7tfj.png"
                 alt="freecodecamp"
               />
             </Link>

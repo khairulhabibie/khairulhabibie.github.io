@@ -22,7 +22,7 @@ function Hero() {
               <span className="text-dark font-bold"> fokus pada pengguna!</span>
             </p>
             <Link
-              to="#"
+              to="https://wa.me/+06282219660064"
               className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transisition duration-300 ease-in-out"
             >
               Hubungi Saya

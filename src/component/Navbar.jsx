@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 function Navbar() {
   const [navpos, setNavpos] = useState("absolute");
@@ -50,52 +49,52 @@ function Navbar() {
               >
                 <ul className="block lg:flex ">
                   <li className="group">
-                    <Link
-                      to="/"
+                    <a
+                      href="/#hero"
                       className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
                     >
                       Beranda
-                    </Link>
+                    </a>
                   </li>
                   <li className="group">
-                    <Link
-                      to="/"
+                    <a
+                      href="/#about"
                       className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
                     >
                       About
-                    </Link>
+                    </a>
                   </li>
                   <li className="group">
-                    <Link
-                      to="/"
+                    <a
+                      href="/#portofolio"
                       className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
                     >
                       Portofolio
-                    </Link>
+                    </a>
                   </li>
                   <li className="group">
-                    <Link
-                      to="/"
+                    <a
+                      href="/#educations"
                       className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
                     >
-                      Clients
-                    </Link>
+                      Educations
+                    </a>
                   </li>
                   <li className="group">
-                    <Link
-                      to="/"
+                    <a
+                      href="/#blog"
                       className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
                     >
                       Blog
-                    </Link>
+                    </a>
                   </li>
                   <li className="group">
-                    <Link
-                      to="/"
+                    <a
+                      href="/#contact"
                       className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
                     >
                       Contact
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </nav>
