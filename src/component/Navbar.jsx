@@ -6,7 +6,7 @@ function Navbar() {
   const [navpos, setNavpos] = useState(null);
   const [navlist, setNavlist] = useState("hidden");
 
-  function hamburgerLine() {
+  function hamburgermenu() {
     if (line === null && navlist !== null) {
       setLine("hamburger-active");
       setNavlist(null);
@@ -42,7 +42,7 @@ function Navbar() {
                 name="hamburger"
                 type="button"
                 className={`block absolute right-4 lg:hidden ${line}`}
-                onClick={hamburgerLine}
+                onClick={hamburgermenu}
               >
                 <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
                 <span className="hamburger-line transition duration-300 ease-in-out"></span>
