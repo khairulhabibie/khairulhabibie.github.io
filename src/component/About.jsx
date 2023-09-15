@@ -10,12 +10,16 @@ function About() {
             <h4 className="font-bold uppercase text-primary mb-3">
               Tentang Saya
             </h4>
-            <h2 className="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">
-              Yuk, Belajar Web Programming di WPU
+            <h2 className="font-bold text-dark text-3xl mb-5 max-w-md lg:text-3xl">
+              Architect of Dynamic Experiences: Profiling a React Maestro
             </h2>
             <p className="font-medium text-base text-secondary max-w-xl lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              praesentium, recusandae qui corrupti odit eius similique.
+              seorang pengembang React yang kreatif dan terampil, mampu
+              menciptakan antarmuka web yang menakjubkan dan berkinerja tinggi.
+              Dengan kemampuan komunikasi yang kuat, Anda bekerja dengan baik
+              dalam tim untuk memberikan solusi teknologi yang inovatif. Terus
+              bersemangat untuk mempelajari hal-hal baru, Anda adalah sumber
+              daya berharga dalam dunia pengembanga
             </p>
           </div>
           <div className="w-full px-4 lg:w-1/2">
@@ -23,9 +27,9 @@ function About() {
               Mari berteman
             </h3>
             <p className="font-medium text-base text-secondary mb-6 lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, fugiat ducimus. Laboriosam harum nisi cum natus cumque
-              ipsum.
+              "Teman-teman! Mari kita terhubung dan berbagi inspirasi melalui
+              media sosial. Saling mendukung dan memperluas jaringan adalah
+              kunci untuk pertumbuhan bersama. Ayo berteman!"
             </p>
             <div className="flex items-center">
               {/* youtube */}

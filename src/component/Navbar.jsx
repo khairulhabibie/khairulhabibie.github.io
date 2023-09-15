@@ -33,7 +33,7 @@ function Navbar() {
           <div className="flex items-center justify-between relative">
             <div className="px-4">
               <a href="#home" className="font-bold text-lg  block py-6">
-                Khairul Habibie
+                khairulhabibie
               </a>
             </div>
             <div className="flex items-center px-4">
@@ -53,32 +53,50 @@ function Navbar() {
               >
                 <ul className="block lg:flex ">
                   <li className="group">
-                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                    <Link
+                      to="/"
+                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                    >
                       Beranda
                     </Link>
                   </li>
                   <li className="group">
-                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                    <Link
+                      to="/"
+                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                    >
                       About
                     </Link>
                   </li>
                   <li className="group">
-                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                    <Link
+                      to="/"
+                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                    >
                       Portofolio
                     </Link>
                   </li>
                   <li className="group">
-                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                    <Link
+                      to="/"
+                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                    >
                       Clients
                     </Link>
                   </li>
                   <li className="group">
-                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                    <Link
+                      to="/"
+                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                    >
                       Blog
                     </Link>
                   </li>
                   <li className="group">
-                    <Link className="text-base text-black py-2 mx-8 flex group-hover:text-red-700">
+                    <Link
+                      to="/"
+                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                    >
                       Contact
                     </Link>
                   </li>
