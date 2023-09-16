@@ -5,6 +5,7 @@ import About from "../component/About";
 import Portofolio from "../component/Portofolio";
 import Educations from "../component/Educations";
 import Blog from "../component/Blog";
+import Contact from "../component/Contact";
 import Footer from "../component/Footer";
 
 function HomePage() {
@@ -16,6 +17,7 @@ function HomePage() {
       <Portofolio />
       <Educations />
       <Blog />
+      <Contact />
       <Footer />
     </>
   );

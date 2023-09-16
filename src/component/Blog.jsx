@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Blog() {
+export default function Blog() {
   return (
     <section id="blog" className="pt-36 pb-32 bg-slate-100">
       <div className="container w-full mx-auto">
@@ -93,5 +93,3 @@ function Blog() {
     </section>
   );
 }
-
-export default Blog;
