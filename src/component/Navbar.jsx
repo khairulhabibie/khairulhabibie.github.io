@@ -40,9 +40,9 @@ function Navbar() {
                 className={`block absolute right-4 lg:hidden ${navline}`}
                 onClick={hamburgermenu}
               >
-                <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-                <span className="hamburger-line transition duration-300 ease-in-out"></span>
-                <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                <span className="hamburger-line origin-top-left"></span>
+                <span className="hamburger-line"></span>
+                <span className="hamburger-line origin-bottom-left"></span>
               </button>
               <nav
                 className={`absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none ${navlist}`}
@@ -50,8 +50,8 @@ function Navbar() {
                 <ul className="block lg:flex ">
                   <li className="group">
                     <a
-                      href="/#hero"
-                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                      href="/#home"
+                      className="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
                     >
                       Beranda
                     </a>
@@ -59,7 +59,7 @@ function Navbar() {
                   <li className="group">
                     <a
                       href="/#about"
-                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                      className="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
                     >
                       About
                     </a>
@@ -67,7 +67,7 @@ function Navbar() {
                   <li className="group">
                     <a
                       href="/#portofolio"
-                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                      className="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
                     >
                       Portofolio
                     </a>
@@ -75,7 +75,7 @@ function Navbar() {
                   <li className="group">
                     <a
                       href="/#educations"
-                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                      className="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
                     >
                       Educations
                     </a>
@@ -83,7 +83,7 @@ function Navbar() {
                   <li className="group">
                     <a
                       href="/#blog"
-                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                      className="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
                     >
                       Blog
                     </a>
@@ -91,7 +91,7 @@ function Navbar() {
                   <li className="group">
                     <a
                       href="/#contact"
-                      className="text-base text-black py-2 mx-8 flex group-hover:text-red-700"
+                      className="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
                     >
                       Contact
                     </a>

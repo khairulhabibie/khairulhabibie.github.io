@@ -5,15 +5,15 @@ function Footer() {
   return (
     <footer className="bg-dark pt-24 pb-12">
       <div className="container w-full mx-auto">
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap ">
           <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
             <h2 className="font-bold text-4xl text-white mb-5">WPU</h2>
             <h3 className="font-bold text-2xl mb-2">Hubungi Kami</h3>
             <p>khairulhabibie01@gmail.com</p>
-            <p>Jl Padang Panjang - Solok Km 18, Nagari Batu Taba</p>
+            <p>Jl. Padang Panjang - Solok Km 18, Nagari Batu Taba</p>
             <p>Tanah Datar</p>
           </div>
-          <div className="w-full px-4 mb-12 md:w-1/3">
+          <div className="w-full px-4 mb-12 md:w-1/3 ">
             <h3 className="font-semibold text-xl text-white mb-5">Tautan</h3>
             <ul className="text-slate-300">
               <li>
@@ -37,34 +37,52 @@ function Footer() {
             <h3 className="font-semibold text-xl text-white mb-5">Tautan</h3>
             <ul className="text-slate-300">
               <li>
-                <Link className="inline-block text-base hover:text-primary  mb-3">
+                <a
+                  href="#home"
+                  className="inline-block text-base hover:text-primary  mb-3"
+                >
                   Beranda
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="inline-block text-base hover:text-primary  mb-3">
+                <a
+                  href="#about"
+                  className="inline-block text-base hover:text-primary  mb-3"
+                >
                   Tentang Saya
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="inline-block text-base hover:text-primary  mb-3">
+                <a
+                  href="#portofolio"
+                  className="inline-block text-base hover:text-primary  mb-3"
+                >
                   Portofolio
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="inline-block text-base hover:text-primary  mb-3">
+                <a
+                  href="#educations"
+                  className="inline-block text-base hover:text-primary  mb-3"
+                >
                   Education
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="inline-block text-base hover:text-primary  mb-3">
+                <a
+                  href="#blog"
+                  className="inline-block text-base hover:text-primary  mb-3"
+                >
                   Blog
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="inline-block text-base hover:text-primary  mb-3">
+                <a
+                  href="#contact"
+                  className="inline-block text-base hover:text-primary  mb-3"
+                >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

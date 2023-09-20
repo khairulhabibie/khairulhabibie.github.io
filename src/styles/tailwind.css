@@ -4,6 +4,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -14,7 +15,7 @@ body {
 }
 
 .hamburger-line {
-  @apply w-[30px] h-[2px] my-2 block bg-black;
+  @apply w-[30px] h-[2px] my-2 block bg-black transition duration-300 ease-in-out;
 }
 
 .hamburger-active > span:nth-child(1) {
