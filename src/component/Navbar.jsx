@@ -6,7 +6,7 @@ function Navbar() {
   const [navlist, setNavlist] = useState("hidden");
 
   function hamburgermenu() {
-    if (navline === "" && navlist !== "") {
+    if (navline === "" && navlist === "hidden") {
       setNavline("hamburger-active");
       setNavlist("");
     } else {
