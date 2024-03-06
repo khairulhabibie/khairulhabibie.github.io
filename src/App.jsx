@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import ProjectPage from "./pages/ProjectPage";
+// import ProjectPage from "./pages/ProjectPage";
 import AboutPage from "./pages/AboutPage";
 import Navbar from "./component/Navbar";
 // import LoginPage from "./pages/LoginPage";
 // import RegisterPage from "./pages/RegisterPage";
-import BlogPage from "./pages/BlogPage";
+// import BlogPage from "./pages/BlogPage";
 // import Footer from './component/Footer';
 
 function App() {
@@ -38,9 +38,9 @@ function App() {
       <Routes>
         <Route path="/" exact element={<HomePage />} />
         <Route path="/*" element={<Navigate to="/" />} />
-        <Route path="/project" element={<ProjectPage />} />
+        {/* <Route path="/project" element={<ProjectPage />} /> */}
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/blog" element={<BlogPage />} />
+        {/* <Route path="/blog" element={<BlogPage />} /> */}
       </Routes>
       {/* <Footer /> */}
     </>
